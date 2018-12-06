@@ -1,0 +1,9 @@
+<animation AnimationProgress="0.0">
+<table>
+    <row>
+        <cell>9</cell>
+        <cell>12</cell>
+        <mask><cell>13</cell></mask>
+    </row>
+</table>
+</animation>

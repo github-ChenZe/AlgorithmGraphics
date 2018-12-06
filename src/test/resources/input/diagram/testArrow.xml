@@ -1,0 +1,16 @@
+<pane>
+    <table Grid="true">
+        <row>
+            <cell Padding="25" class="class" id="13" FontSize="144">Apple</cell>
+            <cell Padding="25" id="id" FontSize="144">Cell</cell>
+            <cell Padding="25" id="14" FontSize="144">Banana</cell>
+        </row>
+        <row>
+            <pane Padding="40">
+                <cell>Test</cell>
+            </pane>
+        </row>
+    </table>
+    <arrow from="13::1/3,2/3" to="14::S" LineColor="Red" ArrowStyle="None" LineStyle="Dashed"></arrow>
+    <arrow from="13::W" to="14::E" LineColor="Cyan" ArrowStyle="None" LineStyle="Dashed"></arrow>
+</pane>

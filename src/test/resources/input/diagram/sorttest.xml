@@ -1,0 +1,3 @@
+<animation AnimationProgress="0.0"><table Swap="True" SwapParameter="(0,1)->(0,0)"><row>
+    <cell>9</cell><cell>12</cell><mask><cell>13</cell></mask>
+</row></table></animation>

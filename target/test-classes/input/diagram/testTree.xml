@@ -1,0 +1,15 @@
+<pane>
+    <tree>
+        <cell>root</cell>
+        <tree>
+            <cell>left</cell>
+            <tree>
+                <cell>leftleft</cell>
+            </tree>
+            <tree>
+                <cell>leftright</cell>
+            </tree>
+        </tree>
+        <framedText class="framed" LineThickness="10" FontColor="Red">right</framedText>
+    </tree>
+</pane>

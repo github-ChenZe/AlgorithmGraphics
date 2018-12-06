@@ -1,0 +1,97 @@
+<pane>
+    <table Grid="false" Separation="20">
+        <row>
+            <table>
+                <row>
+                    <cell>String</cell>
+                    <cell>Category</cell>
+                </row>
+                <row>
+                    <cell>Alice</cell>
+                    <cell FontName="Monospaced" id="source0">3</cell>
+                </row>
+                <row>
+                    <cell>Bob</cell>
+                    <cell FontName="Monospaced" id="source1">2</cell>
+                </row>
+                <row>
+                    <cell>Calamy</cell>
+                    <cell FontName="Monospaced" id="source2">1</cell>
+                </row>
+                <row>
+                    <cell>Jack</cell>
+                    <cell FontName="Monospaced" id="source3">0</cell>
+                </row>
+                <row>
+                    <cell>Rudin</cell>
+                    <cell FontName="Monospaced" id="source4">2</cell>
+                </row>
+                <row>
+                    <cell>Snowden</cell>
+                    <cell FontName="Monospaced" id="source5">1</cell>
+                </row>
+            </table>
+            <table>
+                <row>
+                    <cell>String</cell>
+                    <cell>Category</cell>
+                </row>
+                <row>
+                    <cell>-</cell>
+                    <cell FontName="Monospaced" id="result0">-</cell>
+                </row>
+                <row>
+                    <cell>-</cell>
+                    <cell FontName="Monospaced" id="result1">-</cell>
+                </row>
+                <row>
+                    <cell>-</cell>
+                    <cell FontName="Monospaced" id="result2">-</cell>
+                </row>
+                <row>
+                    <cell>-</cell>
+                    <cell FontName="Monospaced" id="result3">-</cell>
+                </row>
+                <row>
+                    <cell>-</cell>
+                    <cell FontName="Monospaced" id="result4">-</cell>
+                </row>
+                <row>
+                    <cell>-</cell>
+                    <cell FontName="Monospaced" id="result5">-</cell>
+                </row>
+            </table>
+            <table>
+                <row>
+                    <cell>Category</cell>
+                    <cell>Accumulated</cell>
+                </row>
+                <row>
+                    <cell FontName="Monospaced" id="None0">0</cell>
+                    <cell FontName="Monospaced" id="count0">0</cell>
+                </row>
+                <row>
+                    <cell FontName="Monospaced" id="None1">1</cell>
+                    <cell FontName="Monospaced" id="count1">0</cell>
+                </row>
+                <row>
+                    <cell FontName="Monospaced" id="None2">2</cell>
+                    <cell FontName="Monospaced" id="count2">0</cell>
+                </row>
+                <row>
+                    <cell FontName="Monospaced" id="None3">3</cell>
+                    <cell FontName="Monospaced" id="count3">0</cell>
+                </row>
+                <row>
+                    <cell FontName="Monospaced" id="None4">4</cell>
+                    <cell FontName="Monospaced" id="count4">0</cell>
+                </row>
+            </table>
+        </row>
+    </table>
+    <arrow LineColor="Red" from="count0::N" to="result0::S"/>
+    <arrow LineColor="Red" from="count1::N" to="result0::S"/>
+    <arrow LineColor="Red" from="count2::N" to="result0::S"/>
+    <arrow LineColor="Red" from="count3::N" to="result0::S"/>
+    <arrow LineColor="Red" from="count4::N" to="result0::S"/>
+</pane>

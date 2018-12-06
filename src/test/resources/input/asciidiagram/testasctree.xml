@@ -1,0 +1,66 @@
+<pane>
+    <tree TreeRootArrowPerch="root">
+        <framedText Padding="1" id="root">THIS IS Root.</framedText>
+        <tree TreeRootArrowPerch="r0">
+            <framedText Padding="1" id="r0">Left</framedText>
+            <tree TreeRootArrowPerch="r11">
+                <framedText Padding="1" id="r11">Right</framedText>
+            </tree>
+            <tree TreeRootArrowPerch="r21">
+                <framedText Padding="1" id="r21">RR</framedText>
+            </tree>
+        </tree>
+        <tree TreeRootArrowPerch="r1">
+            <framedText Padding="1" id="r1">Right</framedText>
+            <tree TreeRootArrowPerch="r13">
+                <framedText Padding="1" id="r13">Right</framedText>
+            </tree>
+            <tree TreeRootArrowPerch="r23">
+                <framedText Padding="1" id="r23">RR</framedText>
+            </tree>
+        </tree>
+        <tree TreeRootArrowPerch="r2">
+            <framedText Padding="1" id="r2">RR</framedText>
+            <tree TreeRootArrowPerch="r14">
+                <framedText Padding="1" id="r14">Right</framedText>
+            </tree>
+            <tree TreeRootArrowPerch="r24">
+                <framedText Padding="1" id="r24">RR</framedText>
+            </tree>
+        </tree>
+        <tree TreeRootArrowPerch="r6">
+            <framedText Padding="1" id="r6">RR</framedText>
+            <tree TreeRootArrowPerch="r17">
+                <framedText Padding="1" id="r17">Right</framedText>
+            </tree>
+            <tree TreeRootArrowPerch="r27">
+                <table id="r27">
+                    <row>
+                        <cell>
+                            Top left
+                        </cell>
+                        <cell>
+                            Top right
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            Bottom left
+                        </cell>
+                        <cell>
+                            Bottom right fdhjfhds
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            B Bottom left
+                        </cell>
+                        <cell id="id">
+                            B Bottom right
+                        </cell>
+                    </row>
+                </table>
+            </tree>
+        </tree>
+    </tree>
+</pane>

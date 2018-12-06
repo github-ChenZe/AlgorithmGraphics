@@ -1,0 +1,18 @@
+<pane>
+    <verticalAlign Separation="40">
+        <cell VerticalAlignAnchor="SE">Apple</cell>
+        <cell VerticalAlignAnchor="N">Banana</cell>
+        <table VerticalAlignAnchor="Another::NE">
+            <row>
+                <cell>Test</cell>
+                <cell id="Another">Another</cell>
+            </row>
+        </table>
+        <table>
+            <row>
+                <cell>Test</cell>
+                <cell>Another</cell>
+            </row>
+        </table>
+    </verticalAlign>
+</pane>

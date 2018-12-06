@@ -1,0 +1,13 @@
+<tree TreeRootAnchor="{ mid != null || (left == null ^ right == null) } -> id || UNSET"
+      TreeBranchAnchor="{ mid != null } -> mid.id'::N' || '@VirtualMid'id'::N'"
+      TreeRootArrowPerch="id">
+    <framedText class="{ this == JustInserted } -> 'focus'; { this == JustViewed } -> 'compared'; { this == JustSet } -> 'set'"
+                Padding="'10'"
+                FontName="'Monospaced'"
+                id="id">
+        thisChar
+    </framedText>
+    left || <empty></empty>;
+    mid ||  { left == null &amp; right == null } -> <empty></empty> || { left == null ^ right == null } -> <cell id="'@VirtualMid'id"></cell>;
+    right || <empty></empty>;
+</tree>

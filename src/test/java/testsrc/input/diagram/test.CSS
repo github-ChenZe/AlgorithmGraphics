@@ -1,0 +1,31 @@
+.class {
+    FontColor: Red;
+}
+
+#id {
+    FontColor: Green;
+}
+
+.framed {
+    Padding: 20;
+}
+
+.focus {
+    LineColor: Green;
+}
+
+.compared {
+    LineColor: Yellow;
+}
+
+.set {
+    LineColor: Blue;
+}
+
+.value {
+    FontColor: Red;
+}
+
+framedText {
+    FontColor: Red;
+}

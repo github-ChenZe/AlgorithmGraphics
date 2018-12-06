@@ -1,0 +1,70 @@
+<animation AnimationProgress="0.0">
+    <pane>
+        <tree >
+            <framedText Padding="1" id="root">THIS IS Root.</framedText>
+            <tree >
+                <framedText Padding="1" id="r0">Left</framedText>
+                <tree >
+                    <framedText Padding="1" id="r11">Right</framedText>
+                </tree>
+                <tree >
+                    <framedText Padding="1" id="r21">RR</framedText>
+                </tree>
+            </tree>
+            <tree >
+                <framedText Padding="1" id="r1">Right</framedText>
+                <tree >
+                    <framedText Padding="1" id="r13">Right</framedText>
+                </tree>
+                <tree >
+                    <framedText Padding="1" id="r23">RR</framedText>
+                </tree>
+            </tree>
+            <tree >
+                <framedText Padding="1" id="r2">RR</framedText>
+                <tree >
+                    <framedText Padding="1" id="r14">Right</framedText>
+                </tree>
+                <tree >
+                    <framedText Padding="1" id="r24">RR</framedText>
+                </tree>
+            </tree>
+            <tree >
+                <framedText Padding="1" id="r6">RR</framedText>
+                <tree>
+                    <framedText Padding="1" id="r17">Right</framedText>
+                </tree>
+                <tree>
+                    <table id="r27" Swap="True" SwapParameter="(1,0)->(1,1)">
+                        <row>
+                            <cell>
+                                Top left
+                            </cell>
+                            <cell>
+                                Top right
+                            </cell>
+                        </row>
+                        <row>
+                            <cell>
+                                Bottom left
+                            </cell>
+                            <cell>
+                                Bottom right fdhjfhds
+                            </cell>
+                        </row>
+                        <row>
+                            <mask EmergeReverse="True">
+                                <cell>
+                                    B Bottom left
+                                </cell>
+                            </mask>
+                            <cell id="id" class="class">
+                                B Bottom right
+                            </cell>
+                        </row>
+                    </table>
+                </tree>
+            </tree>
+        </tree>
+    </pane>
+</animation>
