@@ -1,10 +1,12 @@
 package van.de.la.sehen.diagram.prototypediagram;
 
+import org.springframework.lang.NonNull;
+import org.springframework.lang.Nullable;
 import van.de.la.sehen.diagram.displayeddiagram.EmptyDiagram;
 import van.de.la.sehen.diagram.displayeddiagram.RootDiagram;
 import van.de.la.sehen.diagram.prototypediagram.model.DiagramModel;
-import van.de.la.sehen.diagram.prototypediagram.model.GeneralAbstractDiagram;
 import van.de.la.sehen.diagram.prototypediagram.model.StyleModel;
+import van.de.la.sehen.diagram.pseudodiagram.FixedPseudoDiagram;
 import van.de.la.sehen.diagram.pseudodiagram.FreePseudoDiagram;
 import van.de.la.sehen.diagram.pseudodiagram.PseudoDiagram;
 import van.de.la.sehen.diagram.readerinterface.attributereading.*;
@@ -14,13 +16,20 @@ import van.de.la.sehen.diagramattributeparticle.diagramparticle.DiagramLambdaPoi
 import van.de.la.sehen.diagramattributeparticle.diagramparticle.PseudoDiagramAccessor;
 import van.de.la.sehen.diagramattributeparticle.enumeratedparticle.*;
 import van.de.la.sehen.diagramstyle.DiagramStyle;
+import van.de.la.sehen.diagramtopology.ChildIndex;
+import van.de.la.sehen.diagramtopology.FixedChildIndex;
+import van.de.la.sehen.diagramtopology.FreeChildIndex;
+import van.de.la.sehen.diagramtopology.PseudoChildIndex;
+import van.de.la.sehen.dimensionparticle.positionparticle.AbsoluteCoordinate;
+import van.de.la.sehen.dimensionparticle.positionparticle.AbsoluteParticle;
+import van.de.la.sehen.dimensionparticle.positionparticle.AbsolutePosition;
 import van.de.la.sehen.dimensionparticle.positionparticle.CoordinateOffset;
 import van.de.la.sehen.dimensionparticle.sizeparticle.IntDimensionComponent;
 import van.de.la.sehen.util.Util;
 import van.de.la.sehen.warning.WarningStream;
 import van.de.la.sehen.warning.WarningType;
 
-import javax.swing.text.Style;
+import javax.annotation.RegEx;
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -63,7 +72,8 @@ public abstract class Diagram extends AbstractDiagram implements DiagramModel<Di
         return (Diagram) super.getParent();
     }
 
-    public static final String FREE_PSEUDO_DIAGRAM_PATTERN = "[0-9.]*(/[0-9.]*)?,[0-9.]*(/[0-9.]*)?";
+    public static final @RegEx String FREE_PSEUDO_DIAGRAM_PATTERN = "[0-9.]*(/[0-9.]*)?,[0-9.]*(/[0-9.]*)?";
+    public static final @RegEx String FIXED_PSEUDO_DIAGRAM_PATTERN = "\\[[0-9]+,[0-9]+]";
 
     public String getId() {
         if (id == null || id.isEmpty()) {
@@ -82,14 +92,19 @@ public abstract class Diagram extends AbstractDiagram implements DiagramModel<Di
     }
 
     protected void pushPseudo(String name, PseudoDiagram pseudoDiagram) {
-        pseudos.put(name, pseudoDiagram);
+        pseudos.put(name, putTopologicalChild(new PseudoChildIndex(name), pseudoDiagram));
     }
 
     public PseudoDiagram getPseudo(String name) {
         if (pseudos.containsKey(name)) {
             return pseudos.get(name);
-        }
-        else if (name.matches(FREE_PSEUDO_DIAGRAM_PATTERN)) {
+        } else if (name.matches(FIXED_PSEUDO_DIAGRAM_PATTERN)) {
+            name = name.substring(1, name.length() - 1);
+            String[] xy = name.split(",");
+            double xCoor = Util.calculateDivision(xy[0]);
+            double yCoor = Util.calculateDivision(xy[1]);
+            return new FixedPseudoDiagram(this, null, xCoor, yCoor);
+        } else if (name.matches(FREE_PSEUDO_DIAGRAM_PATTERN)) {
             String[] xy = name.split(",");
             double xRatio = Util.calculateDivision(xy[0]);
             double yRatio = Util.calculateDivision(xy[1]);
@@ -98,6 +113,23 @@ public abstract class Diagram extends AbstractDiagram implements DiagramModel<Di
             WarningStream.putWarning("Invalid pseudo name '" + name + "'.", this);
             return null;
         }
+    }
+
+    @Override
+    protected AbstractDiagram getWildChildFromTopologicalIndex(ChildIndex index) {
+        if (index instanceof FixedChildIndex) {
+            return new FixedPseudoDiagram(this, null, ((FixedChildIndex) index).getX(), ((FixedChildIndex) index).getY());
+        } else if (index instanceof FreeChildIndex) {
+            return new FreePseudoDiagram(((FreeChildIndex) index).getXRation(), ((FreeChildIndex) index).getYRation(), this, null);
+        }
+        return null;
+    }
+
+    @Override
+    protected ChildIndex getTopologicalIndexOfWildChild(AbstractDiagram wildChild) {
+        if (wildChild instanceof FixedPseudoDiagram || wildChild instanceof FreePseudoDiagram) {
+            return wildChild.getTopologicalIndex();
+        } return null;
     }
 
     public Diagram(Diagram parent, DiagramStyle style) {
@@ -226,10 +258,14 @@ public abstract class Diagram extends AbstractDiagram implements DiagramModel<Di
             case SWAP:
             case EMERGE:
             case EMERGE_REVERSE:
+            case BRANCH_EMERGE:
+            case BRANCH_EMERGE_REVERSE:
                 return BooleanStyle.FALSE;
             case SWAP_PROGRESS:
             case EMERGE_PROGRESS:
             case ANIMATION_PROGRESS:
+            case TRANSITION_PROGRESS:
+            case BRANCH_EMERGE_PROGRESS:
                 if (getParent() != null)
                     return new StyleInheritWrapper(this::getParent, key).get(0);
                 else {
@@ -238,13 +274,29 @@ public abstract class Diagram extends AbstractDiagram implements DiagramModel<Di
                 }
             case ANIMATION_STEP:
                 return new DiagramAttributeDoubleParticle(1.0 / 16);
+            case FUNCTION_ANIMATOR_NAME:
+                return new DiagramAttributeStringParticle("__@intrinsic__");
+            case BACKGROUND_COLOR:
+                return DiagramAttributeColorParticle.transparent();
+            case SCALE_FACTOR:
+                return new DiagramAttributeDoubleParticle(1.0);
+            case WIDTH:
+            case HEIGHT:
+            case PADDING_LEFT:
+            case PADDING_RIGHT:
+            case PADDING_TOP:
+            case PADDING_BOTTOM:
+            case MIRROR_DIAGRAM:
+                return null;
         }
         WarningStream.putWarning("Invalid or no default attribute key name " + key + ".", Diagram.class);
         return null;
     }
 
+    @Nullable
     public <T> T getStyleOf(String key) {
         DiagramAttributeCluster cluster = getStyle(key);
+        if (cluster == null) return null;
         if (!(cluster instanceof DiagramAttributeSingleCluster)) {
             WarningStream.putWarning("Getting single particle from non-single cluster", this);
         }
@@ -284,6 +336,22 @@ public abstract class Diagram extends AbstractDiagram implements DiagramModel<Di
     protected CoordinateOffset getPadding() {
         return new CoordinateOffset(getStyleOf("Padding"));
     }
+
+    @NonNull
+    protected CoordinateOffset getPaddingComponent(@NonNull String key) {
+        //TODO: fix the null-check here with a well-defined unset mark
+        Integer paddingComponent = getStyleOf(key);
+        if (paddingComponent != null) return new CoordinateOffset(paddingComponent);
+        return new CoordinateOffset(getStyleOf(PADDING));
+    }
+
+    protected CoordinateOffset getPaddingLeft() { return getPaddingComponent(PADDING_LEFT); }
+
+    protected CoordinateOffset getPaddingRight() { return getPaddingComponent(PADDING_RIGHT); }
+
+    protected CoordinateOffset getPaddingTop() { return getPaddingComponent(PADDING_TOP); }
+
+    protected CoordinateOffset getPaddingBottom() { return getPaddingComponent(PADDING_BOTTOM); }
 
     protected PseudoDiagram getFrom() {
         return getStyleOf("From");
@@ -383,11 +451,96 @@ public abstract class Diagram extends AbstractDiagram implements DiagramModel<Di
     }
 
     protected double getAnimationStep() {
-        return getStyleOf(ANIMATION_STEP);
+        return getNotNullDouble(ANIMATION_STEP);
     }
 
     protected double getAnimationProgress() {
         return ((DiagramAttributeDoubleParticle) getStyle(ANIMATION_PROGRESS).get(0)).get();
+    }
+
+    public double getNotNullDouble(String key) {
+        Double nullable = getStyleOf(key);
+        if (nullable == null) {
+            WarningStream.putWarning("Attribute not set: " + key + ".", this);
+            return Double.NaN;
+        }
+        return nullable;
+    }
+
+    public double getVarStart() {
+        return getNotNullDouble(VAR_START);
+    }
+
+    public double getVarEnd() {
+        return getNotNullDouble(VAR_END);
+    }
+
+    public double getYStart() {
+        return getNotNullDouble(Y_START);
+    }
+
+    public double getYEnd() {
+        return getNotNullDouble(Y_END);
+    }
+
+    public String getFunctionVariableName() {
+        return getStyleOf(FUNCTION_VARIABLE_NAME);
+    }
+
+    @Nullable
+    public String getFunctionAnimatorName() { return getStyleOf(FUNCTION_ANIMATOR_NAME); }
+
+    protected Color getBackgroundColor() {
+        return getStyleOf(BACKGROUND_COLOR);
+    }
+
+    @Override
+    protected AbstractDiagram getMirrorDiagram() {
+        Diagram thisMirror = getStyleOf(MIRROR_DIAGRAM);
+        if (thisMirror != null) return thisMirror;
+        return super.getMirrorDiagram();
+    }
+
+    @Override
+    public double getTransitionProgress() {
+        return getNotNullDouble(TRANSITION_PROGRESS);
+    }
+
+    public double getScaleFactor() {
+        return getNotNullDouble(SCALE_FACTOR);
+    }
+
+    protected boolean getBranchEmerge() {
+        return ((BooleanStyle) (getStyle(BRANCH_EMERGE).get(0))).toBoolean();
+    }
+
+    protected boolean getBranchEmergeReverse() {
+        return ((BooleanStyle) (getStyle(BRANCH_EMERGE_REVERSE).get(0))).toBoolean();
+    }
+
+    protected double getBranchEmergeProgress() {
+        return getNotNullDouble(BRANCH_EMERGE_PROGRESS);
+    }
+
+    protected int getBranchEmergeIndex() {
+        Integer index = getStyleOf(BRANCH_EMERGE_PARAMETER);
+        if (index == null) {
+            WarningStream.putWarning(BRANCH_EMERGE_PARAMETER + " had not been set.", this);
+            return 0;
+        }
+        return index;
+    }
+
+    @Override
+    public IntDimensionComponent getWidth() {
+        Integer width = getStyleOf(WIDTH);
+        return width == null ? super.getWidth() : new IntDimensionComponent(width);
+    }
+
+    @Override
+    public IntDimensionComponent getHeight() {
+        Integer height = getStyleOf(HEIGHT);
+        return height == null ? super.getHeight() : new IntDimensionComponent(height);
     }
 
     @Override

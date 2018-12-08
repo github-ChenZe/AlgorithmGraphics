@@ -1,6 +1,7 @@
 package van.de.la.sehen.xmldiagramtree;
 
 import org.w3c.dom.Element;
+import van.de.la.sehen.diagram.deriveddiagram.BinaryTreeDiagram;
 import van.de.la.sehen.diagram.deriveddiagram.FramedTextDiagram;
 import van.de.la.sehen.diagram.deriveddiagram.TreeDiagram;
 import van.de.la.sehen.diagram.displayeddiagram.*;
@@ -64,6 +65,12 @@ public class XMLDiagramTreeNode
                 return parent -> new MaskDiagram(parent, this);
             case "animation":
                 return parent -> new AnimationDiagram(parent, this);
+            case "plot":
+                return parent -> new PlotDiagram(parent, this);
+            case "binaryTree":
+                return parent -> new BinaryTreeDiagram(parent, this);
+            case "transition":
+                return parent -> new TransitionDiagram(parent, this);
         }
         return null;
     }

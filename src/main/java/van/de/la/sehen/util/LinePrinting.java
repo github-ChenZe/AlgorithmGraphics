@@ -27,7 +27,7 @@ public class LinePrinting {
     }
 
     private static boolean isDiffLegal(Tuple<Integer, Integer> diff) {
-        return ( diff.x == 0 || diff.x == -1 || diff.x == 1 ) && ( diff.y == 0 || diff.y == -1 || diff.y == 1 );
+        return (diff.x == 0 || diff.x == -1 || diff.x == 1) && (diff.y == 0 || diff.y == -1 || diff.y == 1);
     }
 
     private static Tuple<Integer, Integer> diff(Tuple<Integer, Integer> lhs, Tuple<Integer, Integer> rhs) {
@@ -56,6 +56,8 @@ public class LinePrinting {
         if (tupleNext.x - tupleThis.x == -1) return X_DEC_1;
         if (tupleNext.y - tupleThis.y == 1) return Y_INC_1;
         if (tupleNext.y - tupleThis.y == -1) return Y_DEC_1;
+        WarningStream.putWarning("Weird tuples: (" + tupleThis.x + ", " + tupleThis.y + ") and (" +
+                tupleNext.x + ", " + tupleNext.y + ")", LinePrinting.class);
         return -100;
     }
 
@@ -173,10 +175,14 @@ public class LinePrinting {
                 cellThrough.add(new Tuple<>(floor(x), floor(y)));
             }
         }
-        Tuple<Integer, Integer> firstTuple = cellThrough.get(0);
-        Tuple<Integer, Integer> lastTuple = cellThrough.get(cellThrough.size() - 1);
-        cellThrough.addAll(0, drawDirect(beginX, beginY, firstTuple.x, firstTuple.y));
-        cellThrough.addAll(cellThrough.size(), drawDirect(lastTuple.x, lastTuple.y, endX, endY));
+        if (cellThrough.size() > 0) {
+            Tuple<Integer, Integer> firstTuple = cellThrough.get(0);
+            Tuple<Integer, Integer> lastTuple = cellThrough.get(cellThrough.size() - 1);
+            cellThrough.addAll(0, drawDirect(beginX, beginY, firstTuple.x, firstTuple.y));
+            cellThrough.addAll(cellThrough.size(), drawDirect(lastTuple.x, lastTuple.y, endX, endY));
+        } else {
+            cellThrough.addAll(0, drawDirect(beginX, beginY, endX, endY));
+        }
         for (int i = 0; i < cellThrough.size() - 1; i++) { // Fill in the gap caused by float-operation diff
             Tuple<Integer, Integer> tupleCurrent = cellThrough.get(i);
             Tuple<Integer, Integer> tupleNext = cellThrough.get(i + 1);
@@ -188,6 +194,7 @@ public class LinePrinting {
             Tuple<Integer, Integer> intermediate = intermediate(tupleCurrent, tupleNext);
             if (intermediate != null) cellThrough.add(i + 1, intermediate);
         }
+
         for (int i = 0; i < cellThrough.size(); i++) {
             Tuple<Integer, Integer> tupleCurrent = cellThrough.get(i);
             if (i == 0) {

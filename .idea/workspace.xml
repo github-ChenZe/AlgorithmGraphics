@@ -1,7 +1,323 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="208a7a98-2a58-4c80-9e11-2c0f63f89dc3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/deriveddiagram/BinaryTreeDiagram.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/displayeddiagram/PlotDiagram.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/displayeddiagram/TransitionDiagram.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/displayeddiagram/asciidisplayeddiagram/ASCIIPlotDiagram.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/displayeddiagram/model/PlotDiagramModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagramattributeparticle/diagramparticle/DiagramByLambdaAccessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagramtopology/ChildIndex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagramtopology/DiagramChildIndex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagramtopology/FixedChildIndex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagramtopology/FreeChildIndex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagramtopology/PseudoChildIndex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagramtopology/RootIndex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/mathematics/MathContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/mathematics/MathTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/mathematics/Parser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/input/asciidiagram/testascpadding.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/input/asciidiagram/testascwidth.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/input/asciidiagram/testplot.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/input/diagram/testAniPlot.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/input/diagram/testAnimateBinary.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/input/diagram/testBackground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/input/diagram/testBinary.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/input/diagram/testMirror.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/input/diagram/testPadding.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/input/diagram/testPlot.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/input/diagram/testTransition.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/input/diagram/testTransition2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/input/diagram/testTransition3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/input/diagram/testWidth.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/deriveddiagram/DerivedDiagram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/deriveddiagram/DerivedDiagram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/displayeddiagram/AnimationDiagram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/displayeddiagram/AnimationDiagram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/displayeddiagram/ArrowDiagram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/displayeddiagram/ArrowDiagram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/displayeddiagram/CellDiagram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/displayeddiagram/CellDiagram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/displayeddiagram/PaneDiagram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/displayeddiagram/PaneDiagram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/displayeddiagram/TableDiagram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/displayeddiagram/TableDiagram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/displayeddiagram/VerticalAlignDiagram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/displayeddiagram/VerticalAlignDiagram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/displayeddiagram/asciidisplayeddiagram/ASCIIPaneDiagram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/displayeddiagram/asciidisplayeddiagram/ASCIIPaneDiagram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/prototypediagram/AbstractDiagram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/prototypediagram/AbstractDiagram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/prototypediagram/CompositeDiagram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/prototypediagram/CompositeDiagram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/prototypediagram/Diagram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/prototypediagram/Diagram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/prototypediagram/asciiprototypediagram/ASCIIDiagram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/prototypediagram/asciiprototypediagram/ASCIIDiagram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/prototypediagram/model/GeneralAbstractDiagram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/prototypediagram/model/GeneralAbstractDiagram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/prototypediagram/model/StyleModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/prototypediagram/model/StyleModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/pseudodiagram/ASCIIFixedPseudoDiagram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/pseudodiagram/ASCIIFixedPseudoDiagram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/pseudodiagram/ASCIIFreePseudoDiagram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/pseudodiagram/ASCIIFreePseudoDiagram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/pseudodiagram/FixedPseudoDiagram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/pseudodiagram/FixedPseudoDiagram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/pseudodiagram/FreePseudoDiagram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/pseudodiagram/FreePseudoDiagram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/readerinterface/attributereading/DiagramAttributeColorParticle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/readerinterface/attributereading/DiagramAttributeColorParticle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/readerinterface/diagrambuilder/DiagramBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/readerinterface/diagrambuilder/DiagramBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/readerinterface/diagrambuilder/WrappedDiagramBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/readerinterface/diagrambuilder/WrappedDiagramBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/readerinterface/diagrambuilder/asciidiagrambuilder/ASCIIDiagramBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/readerinterface/diagrambuilder/asciidiagrambuilder/ASCIIDiagramBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagramimage/PortableDiagramCanvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagramimage/PortableDiagramCanvas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagramimage/asciidiagramimage/ASCIICanvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagramimage/asciidiagramimage/ASCIICanvas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/util/LinePrinting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/util/LinePrinting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/util/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/util/Util.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/xmldiagramtree/XMLDiagramTreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/xmldiagramtree/XMLDiagramTreeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/xmldiagramtree/asciixmldiagramtree/ASCIIXMLDiagramTreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/xmldiagramtree/asciixmldiagramtree/ASCIIXMLDiagramTreeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/xmldiagramtree/model/XMLDiagramTreeModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/xmldiagramtree/model/XMLDiagramTreeModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/xmldiagramtree/model/XMLDiagramTreeNodeModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/van/de/la/sehen/xmldiagramtree/model/XMLDiagramTreeNodeModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testsrc/DiagramTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testsrc/DiagramTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testsrc/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testsrc/Util.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/input/diagram/test.CSS" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/input/diagram/test.CSS" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/input/diagram/testanitree.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/input/diagram/testanitree.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/van/de/la/sehen/diagram/deriveddiagram/DerivedDiagram.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/van/de/la/sehen/diagram/deriveddiagram/DerivedDiagram.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/van/de/la/sehen/diagram/deriveddiagram/asciideriveddiagram/ASCIIDerivedDiagram.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/van/de/la/sehen/diagram/deriveddiagram/asciideriveddiagram/ASCIIDerivedDiagram.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/van/de/la/sehen/diagram/displayeddiagram/AnimationDiagram.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/van/de/la/sehen/diagram/displayeddiagram/AnimationDiagram.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/van/de/la/sehen/diagram/displayeddiagram/ArrowDiagram.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/van/de/la/sehen/diagram/displayeddiagram/ArrowDiagram.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/van/de/la/sehen/diagram/displayeddiagram/CellDiagram.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/van/de/la/sehen/diagram/displayeddiagram/CellDiagram.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/van/de/la/sehen/diagram/displayeddiagram/MaskDiagram.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/van/de/la/sehen/diagram/displayeddiagram/MaskDiagram.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/van/de/la/sehen/diagram/displayeddiagram/PaneDiagram.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/van/de/la/sehen/diagram/displayeddiagram/PaneDiagram.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/van/de/la/sehen/diagram/displayeddiagram/RootDiagram.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/van/de/la/sehen/diagram/displayeddiagram/RootDiagram.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/van/de/la/sehen/diagram/displayeddiagram/TableDiagram$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/van/de/la/sehen/diagram/displayeddiagram/TableDiagram$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/van/de/la/sehen/diagram/displayeddiagram/TableDiagram.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/van/de/la/sehen/diagram/displayeddiagram/TableDiagram.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/van/de/la/sehen/diagram/displayeddiagram/VerticalAlignDiagram.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/van/de/la/sehen/diagram/displayeddiagram/VerticalAlignDiagram.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/van/de/la/sehen/diagram/displayeddiagram/asciidisplayeddiagram/ASCIIPaneDiagram.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/van/de/la/sehen/diagram/displayeddiagram/asciidisplayeddiagram/ASCIIPaneDiagram.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/van/de/la/sehen/diagram/displayeddiagram/asciidisplayeddiagram/ASCIIRootDiagram.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/van/de/la/sehen/diagram/displayeddiagram/asciidisplayeddiagram/ASCIIRootDiagram.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/van/de/la/sehen/diagram/displayeddiagram/asciidisplayeddiagram/ASCIITableDiagram.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/van/de/la/sehen/diagram/displayeddiagram/asciidisplayeddiagram/ASCIITableDiagram.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/van/de/la/sehen/diagram/displayeddiagram/asciidisplayeddiagram/ASCIIVerticalAlignDiagram.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/van/de/la/sehen/diagram/displayeddiagram/asciidisplayeddiagram/ASCIIVerticalAlignDiagram.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/van/de/la/sehen/diagram/prototypediagram/AbstractDiagram.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/van/de/la/sehen/diagram/prototypediagram/AbstractDiagram.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/van/de/la/sehen/diagram/prototypediagram/CompositeDiagram.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/van/de/la/sehen/diagram/prototypediagram/CompositeDiagram.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/van/de/la/sehen/diagram/prototypediagram/Diagram.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/van/de/la/sehen/diagram/prototypediagram/Diagram.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/van/de/la/sehen/diagram/prototypediagram/asciiprototypediagram/ASCIIDiagram.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/van/de/la/sehen/diagram/prototypediagram/asciiprototypediagram/ASCIIDiagram.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/van/de/la/sehen/diagram/prototypediagram/model/GeneralAbstractDiagram.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/van/de/la/sehen/diagram/prototypediagram/model/GeneralAbstractDiagram.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/van/de/la/sehen/diagram/prototypediagram/model/StyleModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/van/de/la/sehen/diagram/prototypediagram/model/StyleModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/van/de/la/sehen/diagram/pseudodiagram/ASCIIFixedPseudoDiagram.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/van/de/la/sehen/diagram/pseudodiagram/ASCIIFixedPseudoDiagram.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/van/de/la/sehen/diagram/pseudodiagram/ASCIIFreePseudoDiagram.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/van/de/la/sehen/diagram/pseudodiagram/ASCIIFreePseudoDiagram.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/van/de/la/sehen/diagram/pseudodiagram/FixedPseudoDiagram.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/van/de/la/sehen/diagram/pseudodiagram/FixedPseudoDiagram.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/van/de/la/sehen/diagram/pseudodiagram/FreePseudoDiagram.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/van/de/la/sehen/diagram/pseudodiagram/FreePseudoDiagram.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/van/de/la/sehen/diagram/readerinterface/attributereading/DiagramAttributeColorParticle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/van/de/la/sehen/diagram/readerinterface/attributereading/DiagramAttributeColorParticle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/van/de/la/sehen/diagram/readerinterface/diagrambuilder/WrappedDiagramBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/van/de/la/sehen/diagram/readerinterface/diagrambuilder/WrappedDiagramBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/van/de/la/sehen/diagramimage/PortableDiagramCanvas.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/van/de/la/sehen/diagramimage/PortableDiagramCanvas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/van/de/la/sehen/diagramimage/asciidiagramimage/ASCIICanvas.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/van/de/la/sehen/diagramimage/asciidiagramimage/ASCIICanvas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/van/de/la/sehen/util/LinePrinting.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/van/de/la/sehen/util/LinePrinting.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/van/de/la/sehen/util/Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/van/de/la/sehen/util/Util.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/van/de/la/sehen/xmldiagramtree/XMLDiagramTreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/van/de/la/sehen/xmldiagramtree/XMLDiagramTreeNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/van/de/la/sehen/xmldiagramtree/asciixmldiagramtree/ASCIIXMLDiagramTreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/van/de/la/sehen/xmldiagramtree/asciixmldiagramtree/ASCIIXMLDiagramTreeNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/van/de/la/sehen/xmldiagramtree/model/XMLDiagramTreeModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/van/de/la/sehen/xmldiagramtree/model/XMLDiagramTreeModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/van/de/la/sehen/xmldiagramtree/model/XMLDiagramTreeNodeModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/van/de/la/sehen/xmldiagramtree/model/XMLDiagramTreeNodeModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-testsrc.TestDriver.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-testsrc.TestDriver.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testsrc.TestDriver.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testsrc.TestDriver.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/input/diagram/test.CSS" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/input/diagram/test.CSS" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/input/diagram/testanitree.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/input/diagram/testanitree.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/output/diagram/testanitree.xml.png0.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/output/diagram/testanitree.xml.png0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/output/diagram/testanitree.xml.png1.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/output/diagram/testanitree.xml.png1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/output/diagram/testanitree.xml.png10.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/output/diagram/testanitree.xml.png10.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/output/diagram/testanitree.xml.png11.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/output/diagram/testanitree.xml.png11.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/output/diagram/testanitree.xml.png12.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/output/diagram/testanitree.xml.png12.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/output/diagram/testanitree.xml.png13.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/output/diagram/testanitree.xml.png13.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/output/diagram/testanitree.xml.png14.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/output/diagram/testanitree.xml.png14.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/output/diagram/testanitree.xml.png15.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/output/diagram/testanitree.xml.png15.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/output/diagram/testanitree.xml.png16.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/output/diagram/testanitree.xml.png16.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/output/diagram/testanitree.xml.png2.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/output/diagram/testanitree.xml.png2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/output/diagram/testanitree.xml.png3.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/output/diagram/testanitree.xml.png3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/output/diagram/testanitree.xml.png4.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/output/diagram/testanitree.xml.png4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/output/diagram/testanitree.xml.png5.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/output/diagram/testanitree.xml.png5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/output/diagram/testanitree.xml.png6.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/output/diagram/testanitree.xml.png6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/output/diagram/testanitree.xml.png7.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/output/diagram/testanitree.xml.png7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/output/diagram/testanitree.xml.png8.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/output/diagram/testanitree.xml.png8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/output/diagram/testanitree.xml.png9.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/output/diagram/testanitree.xml.png9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testsrc/DiagramTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testsrc/DiagramTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testsrc/Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testsrc/Util.class" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-2020728814">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="CSS" value="4" />
+          <entry key="class" value="2" />
+          <entry key="css" value="1" />
+          <entry key="iml" value="1" />
+          <entry key="java" value="320" />
+          <entry key="lst" value="1" />
+          <entry key="name" value="1" />
+          <entry key="output" value="14" />
+          <entry key="png" value="365" />
+          <entry key="xml" value="66" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="2" />
+          <entry key="CSS" value="5" />
+          <entry key="IDEA_MODULE" value="1" />
+          <entry key="Image" value="365" />
+          <entry key="JAVA" value="320" />
+          <entry key="PLAIN_TEXT" value="16" />
+          <entry key="XML" value="66" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="CSS" value="69" />
+          <entry key="dummy" value="5" />
+          <entry key="java" value="21386" />
+          <entry key="xml" value="2083" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSS" value="69" />
+          <entry key="JAVA" value="21386" />
+          <entry key="PLAIN_TEXT" value="5" />
+          <entry key="XML" value="2083" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/target/test-classes/output/diagram/testPlot.xml.png0.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/target/test-classes/output/diagram/testrot.xml.png0.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/target/test-classes/output/diagram/testrot.xml.png1.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/target/test-classes/output/diagram/testrot.xml.png2.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/target/test-classes/output/diagram/testrot.xml.png3.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/target/test-classes/output/diagram/testrot.xml.png4.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/target/test-classes/output/diagram/testrot.xml.png5.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/target/test-classes/output/diagram/testrot.xml.png6.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/target/test-classes/output/diagram/testrot.xml.png7.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/target/test-classes/output/diagram/testrot.xml.png8.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>-100</find>
+      <find>System.out.println</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/test/resources/input/diagram/testPadding.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/displayeddiagram/CellDiagram.java" />
+        <option value="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/displayeddiagram/asciidisplayeddiagram/ASCIIPaneDiagram.java" />
+        <option value="$PROJECT_DIR$/target/test-classes/input/diagram/testFixedPseudo.xml" />
+        <option value="$PROJECT_DIR$/target/test-classes/input/diagram/testTST.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/testsrc/input/diagram/testBinary.xml" />
+        <option value="$PROJECT_DIR$/src/test/resources/input/diagram/testanitree.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/readerinterface/diagrambuilder/DiagramBuilder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/readerinterface/diagrambuilder/asciidiagrambuilder/ASCIIDiagramBuilder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagramattributeparticle/diagramparticle/DiagramByLambdaAccessor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/displayeddiagram/TableDiagram.java" />
+        <option value="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/displayeddiagram/PaneDiagram.java" />
+        <option value="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/displayeddiagram/VerticalAlignDiagram.java" />
+        <option value="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/deriveddiagram/DerivedDiagram.java" />
+        <option value="$PROJECT_DIR$/src/test/java/testsrc/input/diagram/testMirror.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/displayeddiagram/TransitionDiagram.java" />
+        <option value="$PROJECT_DIR$/src/main/java/van/de/la/sehen/xmldiagramtree/XMLDiagramTreeNode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagramtopology/ChildIndex.java" />
+        <option value="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/prototypediagram/model/AbstractDiagramModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagramtopology/RootIndex.java" />
+        <option value="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagramtopology/DiagramChildIndex.java" />
+        <option value="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagramtopology/PseudoChildIndex.java" />
+        <option value="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/pseudodiagram/ASCIIFreePseudoDiagram.java" />
+        <option value="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/pseudodiagram/ASCIIFixedPseudoDiagram.java" />
+        <option value="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagramtopology/FixedChildIndex.java" />
+        <option value="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagramtopology/FreeChildIndex.java" />
+        <option value="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/prototypediagram/CompositeDiagram.java" />
+        <option value="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/prototypediagram/model/GeneralAbstractDiagram.java" />
+        <option value="$PROJECT_DIR$/src/test/java/testsrc/DiagramTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/deriveddiagram/TreeDiagram.java" />
+        <option value="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/readerinterface/diagrambuilder/WrappedDiagramBuilder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/van/de/la/sehen/util/Util.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/input/diagram/testMirror.xml" />
+        <option value="$PROJECT_DIR$/src/test/resources/input/diagram/testTransition.xml" />
+        <option value="$PROJECT_DIR$/src/test/resources/input/diagram/testTransition2.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/deriveddiagram/FramedTextDiagram.java" />
+        <option value="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/pseudodiagram/FixedPseudoDiagram.java" />
+        <option value="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/pseudodiagram/FreePseudoDiagram.java" />
+        <option value="$PROJECT_DIR$/src/main/java/van/de/la/sehen/xmldiagramtree/model/XMLDiagramTreeModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/van/de/la/sehen/xmldiagramtree/model/XMLDiagramTreeNodeModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/displayeddiagram/ArrowDiagram.java" />
+        <option value="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/displayeddiagram/AnimationDiagram.java" />
+        <option value="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/prototypediagram/Diagram.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/input/diagram/test.CSS" />
+        <option value="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/prototypediagram/model/StyleModel.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/input/diagram/testTransition3.xml" />
+        <option value="$PROJECT_DIR$/src/test/resources/input/diagram/testBinary.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/prototypediagram/AbstractDiagram.java" />
+        <option value="$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/deriveddiagram/BinaryTreeDiagram.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/input/diagram/testAnimateBinary.xml" />
+        <option value="$PROJECT_DIR$/target/test-classes/output/diagram/testrot.xml" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="375" />
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="811" />
@@ -59,8 +375,499 @@
       </profile-state>
     </entry>
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="van.de.la.sehen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AlgorithmGraphics" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="van.de.la.sehen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AlgorithmGraphics" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="van.de.la.sehen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AlgorithmGraphics" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="van.de.la.sehen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AlgorithmGraphics" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="van.de.la.sehen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AlgorithmGraphics" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sehen" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="van.de.la.sehen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AlgorithmGraphics" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sehen" type="462c0819:PsiDirectoryNode" />
+              <item name="diagram" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="van.de.la.sehen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AlgorithmGraphics" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sehen" type="462c0819:PsiDirectoryNode" />
+              <item name="diagram" type="462c0819:PsiDirectoryNode" />
+              <item name="deriveddiagram" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="van.de.la.sehen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AlgorithmGraphics" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sehen" type="462c0819:PsiDirectoryNode" />
+              <item name="diagram" type="462c0819:PsiDirectoryNode" />
+              <item name="prototypediagram" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="van.de.la.sehen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AlgorithmGraphics" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sehen" type="462c0819:PsiDirectoryNode" />
+              <item name="diagram" type="462c0819:PsiDirectoryNode" />
+              <item name="prototypediagram" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="van.de.la.sehen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AlgorithmGraphics" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="van.de.la.sehen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AlgorithmGraphics" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="van.de.la.sehen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AlgorithmGraphics" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="input" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="van.de.la.sehen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AlgorithmGraphics" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="input" type="462c0819:PsiDirectoryNode" />
+              <item name="diagram" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="van.de.la.sehen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AlgorithmGraphics" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="van.de.la.sehen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AlgorithmGraphics" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="test-classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="van.de.la.sehen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AlgorithmGraphics" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="test-classes" type="462c0819:PsiDirectoryNode" />
+              <item name="output" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="van.de.la.sehen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AlgorithmGraphics" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="test-classes" type="462c0819:PsiDirectoryNode" />
+              <item name="output" type="462c0819:PsiDirectoryNode" />
+              <item name="diagram" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
   <component name="PropertiesComponent">
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544280440058" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="Errors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources/input/diagram" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="van.de.la.sehen.diagram.displayeddiagram" />
+      <recent name="van.de.la.sehen.diagramattributeparticle.diagramparticle" />
+      <recent name="van.de.la.sehen.diagram.deriveddiagram" />
+      <recent name="van.de.la.sehen.diagram.displayeddiagram.asciidisplayeddiagram" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources/input/diagram" />
+      <recent name="$PROJECT_DIR$/src/test/resources/input/asciidiagram" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.TestDriver.test">
+    <configuration name="Parser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="van.de.la.sehen.mathematics.Parser" />
+      <module name="van.de.la.sehen" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="van.de.la.sehen.mathematics.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestDriver.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="van.de.la.sehen" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testsrc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testsrc" />
+      <option name="MAIN_CLASS_NAME" value="testsrc.TestDriver" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Parser" />
+      <item itemvalue="JUnit.TestDriver.test" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestDriver.test" />
+        <item itemvalue="Application.Parser" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="208a7a98-2a58-4c80-9e11-2c0f63f89dc3" name="Default Changelist" comment="" />
+      <created>1544082517156</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1544082517156</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="TestDriver_test - 2018.12.08 at 15h 03m 54s.xml">
+      <configuration name="TestDriver.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDriver_test - 2018.12.08 at 15h 05m 31s.xml">
+      <configuration name="TestDriver.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDriver_test - 2018.12.08 at 15h 37m 41s.xml">
+      <configuration name="TestDriver.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDriver_test - 2018.12.08 at 15h 38m 21s.xml">
+      <configuration name="TestDriver.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDriver_test - 2018.12.08 at 15h 53m 49s.xml">
+      <configuration name="TestDriver.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDriver_test - 2018.12.08 at 15h 54m 53s.xml">
+      <configuration name="TestDriver.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDriver_test - 2018.12.08 at 15h 56m 01s.xml">
+      <configuration name="TestDriver.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDriver_test - 2018.12.08 at 15h 57m 50s.xml">
+      <configuration name="TestDriver.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDriver_test - 2018.12.08 at 15h 58m 37s.xml">
+      <configuration name="TestDriver.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDriver_test - 2018.12.08 at 16h 44m 10s.xml">
+      <configuration name="TestDriver.test" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="3" y="23" width="1440" height="811" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="JProfiler" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" weight="0.32962447" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32962447" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.42280945" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991655" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/target/test-classes/output/diagram/testTransition3.xml.png9.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/output/diagram/testTransition3.xml.png8.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/output/diagram/testTransition3.xml.png14.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/output/diagram/testTransition3.xml.png16.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/output/diagram/testAniPlot.xml.png19.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/output/diagram/testanitree.xml.png1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/output/diagram/testanitree.xml.png7.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/output/diagram/testanitree.xml.png9.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/output/diagram/testanitree.xml.png12.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/output/diagram/testanitree.xml.png15.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/output/diagram/testanitree.xml.png11.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/output/diagram/testanitree.xml.png6.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/output/diagram/testanitree.xml.png4.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/van/de/la/sehen/xmldiagramrenderer/ASCIIXMLDiagramRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/van/de/la/sehen/xmldiagramrenderer/XMLDiagramRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/input/diagram/testBinary.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/output/diagram/testBinary.xml.png0.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/prototypediagram/model/StyleModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="633">
+          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/prototypediagram/AbstractDiagram.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/deriveddiagram/DerivedDiagram.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="52" column="5" lean-forward="true" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+          <folding>
+            <element signature="e#1267#1268#0" expanded="true" />
+            <element signature="e#1300#1301#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/van/de/la/sehen/diagram/deriveddiagram/BinaryTreeDiagram.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="111" column="77" lean-forward="true" selection-start-line="111" selection-start-column="77" selection-end-line="111" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/output/diagram/testTransition3.xml.png2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/output/diagram/testTransition3.xml.png11.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/output/diagram/testTransition3.xml.png3.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/output/diagram/testTransition3.xml.png4.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/output/diagram/testTransition3.xml.png6.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/output/diagram/testTransition2.xml.png0.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/output/diagram/testTransition.xml.png0.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/output/diagram/testTransition3.xml.png1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/output/diagram/testTransition3.xml.png0.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/input/diagram/testAnimateBinary.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/output/diagram/testAnimateBinary.xml.png3.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/output/diagram/testAnimateBinary.xml.png0.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/output/diagram/testAnimateBinary.xml.png1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/output/diagram/testAnimateBinary.xml.png2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/output/diagram/testAnimateBinary.xml.png4.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/output/diagram/testAnimateBinary.xml.png5.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/output/diagram/testAnimateBinary.xml.png6.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/output/diagram/testAnimateBinary.xml.png7.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/output/diagram/testAnimateBinary.xml.png8.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/input/diagram/testrot.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="229" selection-start-line="229" selection-end-line="229" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/output/diagram/testPlot.xml.png0.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/output/diagram/testrot.xml.png1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/output/diagram/testrot.xml.png2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/output/diagram/testrot.xml.png3.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/output/diagram/testrot.xml.png4.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/output/diagram/testrot.xml.png5.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/output/diagram/testrot.xml.png6.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/output/diagram/testrot.xml.png7.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/output/diagram/testrot.xml.png0.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/output/diagram/testrot.xml.png8.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
   </component>
 </project>

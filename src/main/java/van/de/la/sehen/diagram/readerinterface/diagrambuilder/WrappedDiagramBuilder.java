@@ -3,6 +3,7 @@ package van.de.la.sehen.diagram.readerinterface.diagrambuilder;
 import van.de.la.sehen.diagram.prototypediagram.Diagram;
 import van.de.la.sehen.diagram.readerinterface.DiagramNode;
 import van.de.la.sehen.diagram.readerinterface.diagrambuilder.model.GeneralWrappedDiagramBuilder;
+import van.de.la.sehen.warning.WarningStream;
 
 import java.util.function.Consumer;
 
@@ -20,6 +21,9 @@ public class WrappedDiagramBuilder extends GeneralWrappedDiagramBuilder<WrappedD
 
     @Override
     public WrappedDiagramBuilder setAfterBuilt(Consumer<Diagram> afterBuilt) {
+        if (this.afterBuilt != null) {
+            WarningStream.putWarning("Resetting after built. The new one will override the old one", this);
+        }
         this.afterBuilt = afterBuilt;
         return this;
     }

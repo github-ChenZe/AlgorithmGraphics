@@ -1,0 +1,13 @@
+<animation AnimationProgress="0.0" AnimationStep="0.02">
+    <pane>
+        <plot FunctionVariableName="x" FunctionAnimatorName="t" Width="1080" Height="360" VarStart="0" VarEnd="10" YStart="-1.5" YEnd="1.5" LineThickness="3" LineColor="Red">
+            sin(x-3.1415927*t)
+        </plot>
+        <plot FunctionVariableName="x" FunctionAnimatorName="t" Width="1080" Height="360" VarStart="0" VarEnd="10" YStart="-1.5" YEnd="1.5" LineThickness="3" LineColor="Red">
+            0-sin(x-3.1415927*t)
+        </plot>
+        <plot FunctionVariableName="x" FunctionAnimatorName="t" Width="1080" Height="360" VarStart="0" VarEnd="10" YStart="-1.5" YEnd="1.5" LineThickness="3" LineColor="Blue">
+            sin(10*(x-3*3.1415927*t))*sin(x-3.1415927*t)
+        </plot>
+    </pane>
+</animation>

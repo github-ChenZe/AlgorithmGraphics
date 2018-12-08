@@ -24,6 +24,10 @@ public class DiagramAttributeColorParticle implements DiagramAttributeParticle<C
         return null;
     }
 
+    public static DiagramAttributeColorParticle transparent() {
+        return new DiagramAttributeColorParticle(new Color(0x00000000, true));
+    }
+
     @Override
     public Color get() {
         return value;

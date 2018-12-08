@@ -61,6 +61,8 @@ public class ASCIIXMLDiagramTreeNode
                 return parent -> new ASCIIVerticalAlignDiagram(parent, this);
             case "empty":
                 return parent -> new ASCIIEmptyDiagram(parent, this);
+            case "plot":
+                return parent -> new ASCIIPlotDiagram(parent, this);
         }
         return null;
     }

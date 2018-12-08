@@ -17,7 +17,8 @@ public class DerivedDiagram<S extends Diagram> extends CompositeDiagram {
     }
 
     public void setSkeleton(S skeleton) {
-        this.skeleton = skeleton;
+        if (this.skeleton != null) removeChild(this.skeleton);
+        this.skeleton = putChildToIndex(skeleton);
     }
 
     public DerivedDiagram(Diagram parent, DiagramStyle style) {
@@ -28,11 +29,11 @@ public class DerivedDiagram<S extends Diagram> extends CompositeDiagram {
         super(parent, node);
     }
 
-    @Override
+    /* @Override
     public Diagram getChildByIndex(int i) {
         if (i != 0) WarningStream.putWarning("Getting index > 0 from derived van.de.la.sehen.diagram.", this);
         return skeleton;
-    }
+    } */
 
     @Override
     public void layoutChildren() {
@@ -51,8 +52,8 @@ public class DerivedDiagram<S extends Diagram> extends CompositeDiagram {
         setHeight(skeleton.getHeight());
     }
 
-    @Override
+    /* @Override
     public void paintDiagram(PortableDiagramCanvas canvas) {
         skeleton.paintDiagram(canvas);
-    }
+    } */
 }

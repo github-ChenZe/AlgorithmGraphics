@@ -1,0 +1,30 @@
+<transition TransitionProgress="0.5">
+    <pane MirrorDiagram="p">
+        <verticalAlign MirrorDiagram="mv">
+            <cell id="io" MirrorDiagram="i">APPLE</cell>
+            <table Grid="false" MirrorDiagram="t">
+                <row>
+                    <cell id="jo" MirrorDiagram="j">BANANA</cell>
+                    <cell id="ko" MirrorDiagram="k">PEAR</cell>
+                </row>
+            </table>
+        </verticalAlign>
+        <arrow From="io::C" To="ko::C"></arrow>
+        <arrow From="ko::C" To="jo::C"></arrow>
+        <arrow From="jo::C" To="io::C"></arrow>
+    </pane>
+    <pane id="p">
+        <verticalAlign id="mv">
+            <cell id="j">BANANA</cell>
+            <table Grid="false" id="t">
+                <row>
+                    <cell id="k">PEAR</cell>
+                    <cell id="i">APPLE</cell>
+                </row>
+            </table>
+        </verticalAlign>
+        <arrow From="i::C" To="k::C"></arrow>
+        <arrow From="k::C" To="j::C"></arrow>
+        <arrow From="j::C" To="u::C"></arrow>
+    </pane>
+</transition>

@@ -16,7 +16,7 @@ import java.util.function.Supplier;
 
 public abstract class XMLDiagramTreeNodeModel<
         ThisT extends XMLDiagramTreeNodeModel<ThisT, GenerateT, ParentT, PseudoByLambdaAccessorT, DiagramLambdaPointerT, ParentTreeT>,
-        GenerateT extends ParentT ,
+        GenerateT extends ParentT,
         ParentT,
         PseudoByLambdaAccessorT extends DiagramAttributeParticle<?>,
         DiagramLambdaPointerT extends DiagramPointerModel<GenerateT, ParentT>,
@@ -80,11 +80,9 @@ public abstract class XMLDiagramTreeNodeModel<
             Node node = nodes.item(i);
             if (node instanceof Element) {
                 children.add(newChildNodeOf((Element) node, (ThisT) this, parentTree));
-            }
-            else if (node instanceof Text) {
+            } else if (node instanceof Text) {
                 content.append(((Text) node).getData().trim());
-            }
-            else {
+            } else {
                 WarningStream.putWarning("Not a valid node type.", this);
             }
         }
@@ -103,33 +101,28 @@ public abstract class XMLDiagramTreeNodeModel<
             if (key.equals("id")) {
                 this.id = node.getNodeValue();
                 parentTree.associateTo(this.id, (ThisT) this);
-            }
-            else if (key.equals("class")) {
+            } else if (key.equals("class")) {
                 this.classes.addAll(Arrays.asList(node.getNodeValue().split(" ")));
-            }
-            else if (key.equals("from") || key.equals("From")) {
+            } else if (key.equals("from") || key.equals("From")) {
                 key = "From";
                 this.attributes.put(key, parsePseudo(node.getNodeValue(), parentTree).toCluster());
-            }
-            else if (key.equals("to") || key.equals("To")) {
+            } else if (key.equals("to") || key.equals("To")) {
                 key = "To";
                 this.attributes.put(key, parsePseudo(node.getNodeValue(), parentTree).toCluster());
-            }
-            else if (key.equals("VerticalAlignAnchor") || key.equals("TreeRootAnchor") || key.equals("TreeBranchAnchor")) {
+            } else if (key.equals("MirrorDiagram")) {
+                this.attributes.put(key, parseId(node.getNodeValue(), parentTree).toCluster());
+            } else if (key.equals("VerticalAlignAnchor") || key.equals("TreeRootAnchor") || key.equals("TreeBranchAnchor")) {
                 this.attributes.put(key, parsePseudo(node.getNodeValue(), parentTree).toCluster());
-            }
-            else if (key.equals("TreeRootArrowPerch")) {
+            } else if (key.equals("TreeRootArrowPerch")) {
                 if (node.getNodeValue().equals("")) {
                     this.attributes.put(key, newDiagramLambdaPointer(() -> this.children.get(0).dereference()).toCluster());
                 } else {
                     this.attributes.put(key, parseId(node.getNodeValue(), parentTree).toCluster());
                 }
-            }
-            else if (isAttributeKey(key)) {
+            } else if (isAttributeKey(key)) {
                 this.attributes.put(key, clusterFromString(key, node.getNodeValue()));
-            }
-            else {
-                WarningStream.putWarning("Not a valid node attribute: " + key + "." , this);
+            } else {
+                WarningStream.putWarning("Not a valid node attribute: " + key + ".", this);
             }
         }
     }
@@ -139,7 +132,15 @@ public abstract class XMLDiagramTreeNodeModel<
     public abstract DiagramLambdaPointerT newDiagramLambdaPointer(Supplier<GenerateT> supplier);
 
     private DiagramLambdaPointerT parseId(String id, XMLDiagramTreeModel<ThisT, ?> parentTree) {
-        return newDiagramLambdaPointer(() -> parentTree.getElementById(id).dereference());
+        return newDiagramLambdaPointer(() -> {
+                    ThisT idNode = parentTree.getElementById(id);
+                    if (idNode == null) {
+                        WarningStream.putWarning("ID not exist.", this);
+                        return null;
+                    }
+                    return idNode.dereference();
+                }
+        );
     }
 
     public abstract PseudoByLambdaAccessorT newPseudoByLambdaAccessor(Supplier<GenerateT> supplier, String pseudoname);
@@ -147,11 +148,10 @@ public abstract class XMLDiagramTreeNodeModel<
     private PseudoByLambdaAccessorT parsePseudo(String fullname, XMLDiagramTreeModel<ThisT, ?> parentTree) {
         String[] idAndPseudo = fullname.split("::");
         if (idAndPseudo.length > 1) {
-            String diagramId =idAndPseudo[0];
+            String diagramId = idAndPseudo[0];
             String pseudoName = idAndPseudo[1];
             return newPseudoByLambdaAccessor(() -> parentTree.getElementById(diagramId).dereference(), pseudoName);
-        }
-        else {
+        } else {
             return newPseudoByLambdaAccessor(this::dereference, idAndPseudo[0]);
         }
     }
@@ -168,7 +168,7 @@ public abstract class XMLDiagramTreeNodeModel<
 
     public String allChildren() {
         StringBuilder sb = new StringBuilder();
-        for (XMLDiagramTreeNodeModel node: children) {
+        for (XMLDiagramTreeNodeModel node : children) {
             sb.append(node.toString());
         }
         return sb.toString();
@@ -176,7 +176,7 @@ public abstract class XMLDiagramTreeNodeModel<
 
     public String allAttribute() {
         StringBuilder sb = new StringBuilder();
-        for (String key: attributes.keySet()) {
+        for (String key : attributes.keySet()) {
             sb.append(key);
             sb.append(": ");
             sb.append(attributes.get(key));
@@ -204,7 +204,7 @@ public abstract class XMLDiagramTreeNodeModel<
 
     @Override
     public String toString() {
-        return  getTagIndent() + Util.ANSI_CYAN + "<" + nodeTag + ">" + Util.ANSI_RESET + "\n" +
+        return getTagIndent() + Util.ANSI_CYAN + "<" + nodeTag + ">" + Util.ANSI_RESET + "\n" +
                 getIndent() + "attributes=" + attributes + "\n" +
                 getIndent() + "id='" + id + "'\n" +
                 getIndent() + "content='" + content + "'\n" +

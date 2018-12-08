@@ -1,0 +1,22 @@
+<transition TransitionProgress="0.5">
+    <table MirrorDiagram="m3">
+        <row>
+            <cell MirrorDiagram="m2">
+                A
+            </cell>
+            <cell MirrorDiagram="m1">
+                Banana
+            </cell>
+        </row>
+    </table>
+    <table id="m3">
+        <row>
+            <cell id="m1">
+                AppleAppleApple
+            </cell>
+            <cell id="m2">
+                Banana
+            </cell>
+        </row>
+    </table>
+</transition>

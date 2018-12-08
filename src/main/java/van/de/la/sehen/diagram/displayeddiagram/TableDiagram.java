@@ -41,7 +41,7 @@ public class TableDiagram extends MatrixDiagram {
                 DiagramBuilder<? extends Diagram> cell = row.getChildren().poll();
                 Diagram childDiagram = cell.buildDiagram(this);
                 if ((! (childDiagram instanceof EmptyDiagram)) || !getIgnoreEmpty())
-                    diagramRow.add(childDiagram);
+                    diagramRow.add(putChildToIndex(childDiagram));
             }
             array.add(diagramRow);
         }
@@ -89,7 +89,7 @@ public class TableDiagram extends MatrixDiagram {
         return lineEnds;
     }
 
-    @Override
+    /* @Override
     public Diagram getChildByIndex(int i) {
         int lastAccumulatedIndex = 0;
         int accumulatedIndex = 0;
@@ -104,7 +104,7 @@ public class TableDiagram extends MatrixDiagram {
         }
         int targetIndex = i - lastAccumulatedIndex;
         return getChildByIndex(targetRow, targetIndex);
-    }
+    } */
 
     public Diagram getChildByIndex(int row, int column) {
         return array.get(row).get(column);
@@ -115,6 +115,13 @@ public class TableDiagram extends MatrixDiagram {
         for (List<Diagram> list: array)
             for (Diagram diagram: list)
                 diagram.layout();
+    }
+
+    private void clearArrows(List<? extends Diagram> oldArrow) {
+        for (Diagram arrow: oldArrow) {
+            removeChild(arrow);
+        }
+        oldArrow.clear();
     }
 
     @Override
@@ -142,15 +149,15 @@ public class TableDiagram extends MatrixDiagram {
             for (int j = 0; j < expectedPosition.get(i).size(); j++)
                 array.get(i).get(j).setPosition(genuinePosition.get(i).get(j));
         List<Tuple<PseudoDiagram, PseudoDiagram>> lineEnds = setPseudos(genuineWidths, genuineHeights);
-        arrows = new ArrayList<>(); // Animation may redraw on the same diagram multiple times
+        clearArrows(arrows); // Animation may redraw on the same diagram multiple times
         if (getGrid()) for (Tuple<PseudoDiagram, PseudoDiagram> tuple: lineEnds) {
-            arrows.add(new ArrowDiagram(this,
+            arrows.add(putChildToIndex(new ArrowDiagram(this,
                     new DiagramFieldsCollectionBuilder()
                             .putAttribute(FROM, new PseudoDiagramDirectAccessor(tuple.x).toCluster())
                             .putAttribute(TO, new PseudoDiagramDirectAccessor(tuple.y).toCluster())
                             .putAttribute(ARROW_STYLE, ArrowStyle.NONE.toCluster())
                             .putAttribute(LINE_COLOR, new StyleInheritWrapper(()->this, LINE_COLOR))
-                            .putAttribute(LINE_THICKNESS, new StyleInheritWrapper(()->this, LINE_THICKNESS))));
+                            .putAttribute(LINE_THICKNESS, new StyleInheritWrapper(()->this, LINE_THICKNESS)))));
         }
     }
 
@@ -202,7 +209,7 @@ public class TableDiagram extends MatrixDiagram {
         return result;
     }
 
-    @Override
+    /* @Override
     public void paintDiagram(PortableDiagramCanvas canvas) {
         for (List<Diagram> row: array) {
             for (Diagram element: row) {
@@ -212,7 +219,7 @@ public class TableDiagram extends MatrixDiagram {
         for (ArrowDiagram arrowDiagram: arrows) {
             arrowDiagram.paintDiagram(canvas);
         }
-    }
+    } */
 
     // size calculation related
 

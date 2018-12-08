@@ -19,7 +19,7 @@ public class PaneDiagram extends CompositeDiagram {
 
     public void setBase(Diagram base) {
         checkMembership(base);
-        this.base = base;
+        this.base = putChildToIndex(base);
     }
 
     private ArrayList<Diagram> children = new ArrayList<>();
@@ -35,8 +35,11 @@ public class PaneDiagram extends CompositeDiagram {
 
         while (elements.hasChildren()) {
             DiagramBuilder<? extends Diagram> child = elements.getChildren().poll();
-            if (!baseSet) setBase(child.buildDiagram(this));
-            else pushChild(child.buildDiagram(this));
+            if (!baseSet) {
+                setBase(child.buildDiagram(this));
+            } else {
+                pushChild(child.buildDiagram(this));
+            }
             baseSet = true;
         }
     }
@@ -47,14 +50,14 @@ public class PaneDiagram extends CompositeDiagram {
 
     public void pushChild(Diagram child) {
         checkMembership(child);
-        children.add(child);
+        children.add(putChildToIndex(child));
     }
 
-    @Override
+    /* @Override
     public Diagram getChildByIndex(int i) {
         if (i == 0) return this.base;
         else return this.children.get(i - 1);
-    }
+    } */
 
     @Override
     public void layoutChildren() {
@@ -62,24 +65,27 @@ public class PaneDiagram extends CompositeDiagram {
             WarningStream.putWarning("Did not set base.", this);
         }
         base.layout();
+        for (Diagram child: children) {
+            child.layout();
+        }
     }
 
     @Override
     public void setChildrenPosition() {
-        base.setPosition(new PositionOffset(getPadding(), getPadding()));
+        base.setPosition(new PositionOffset(getPaddingLeft(), getPaddingTop()));
     }
 
-    @Override
+    /* @Override
     public void paintDiagram(PortableDiagramCanvas canvas) {
         base.paintDiagram(canvas);
         for (Diagram child: children) {
             child.paintDiagram(canvas);
         }
-    }
+    } */
 
     @Override
     public void calculateSize() {
-        setWidth(new IntDimensionComponent(base.getWidth().toOffset().add(getPadding()).add(getPadding()).getValue()));
-        setHeight(new IntDimensionComponent(base.getHeight().toOffset().add(getPadding()).add(getPadding()).getValue()));
+        setWidth(new IntDimensionComponent(base.getWidth().toOffset().add(getPaddingLeft()).add(getPaddingRight()).getValue()));
+        setHeight(new IntDimensionComponent(base.getHeight().toOffset().add(getPaddingTop()).add(getPaddingBottom()).getValue()));
     }
 }

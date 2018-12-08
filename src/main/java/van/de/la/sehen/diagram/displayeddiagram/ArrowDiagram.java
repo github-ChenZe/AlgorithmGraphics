@@ -10,6 +10,7 @@ import van.de.la.sehen.diagramimage.PortableDiagramCanvas;
 import van.de.la.sehen.diagramstyle.DiagramStyle;
 import van.de.la.sehen.dimensionparticle.positionparticle.AbsoluteCoordinate;
 import van.de.la.sehen.dimensionparticle.positionparticle.CoordinateOffset;
+import van.de.la.sehen.dimensionparticle.sizeparticle.IntDimensionComponent;
 import van.de.la.sehen.warning.WarningStream;
 
 import java.awt.*;
@@ -67,14 +68,21 @@ public class ArrowDiagram extends Diagram {
     }
 
     private void drawArrow(PortableDiagramCanvas canvas, AbsoluteCoordinate FromX, AbsoluteCoordinate FromY, AbsoluteCoordinate ToX, AbsoluteCoordinate ToY) {
+        ToX = FromX.addByOffset(new IntDimensionComponent(ToX.getValue() - FromX.getValue()).toOffset(getScaleFactor()));
+        ToY = FromY.addByOffset(new IntDimensionComponent(ToY.getValue() - FromY.getValue()).toOffset(getScaleFactor()));
         if (getArrowStyle() == ArrowStyle.NONE) {
             drawLine(canvas, FromX, FromY, ToX, ToY);
             return;
         }
         Vector2D tip = new Vector2D(ToX.getValue(), ToY.getValue());
+        Vector2D difference = new Vector2D(ToX.getValue() - FromX.getValue(), ToY.getValue() - FromY.getValue());
         double height = 9 * (double)getLineThickness() / 2;
+        if (difference.norm() < height) { // length too small to draw an arrow head
+            drawLine(canvas, FromX, FromY, ToX, ToY);
+            return;
+        }
         double halfWidth = 3 * (double)getLineThickness() / 2;
-        Vector2D arrowDirection = new Vector2D(ToX.getValue() - FromX.getValue(), ToY.getValue() - FromY.getValue()).normalize().times(-1);
+        Vector2D arrowDirection = difference.normalize().times(-1);
         Vector2D perpendicularDirection = arrowDirection.rotate(PI / 2);
         Vector2D heightVector = arrowDirection.times(height);
         Vector2D halfBottomVector = perpendicularDirection.times(halfWidth);

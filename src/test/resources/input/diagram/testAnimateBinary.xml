@@ -1,0 +1,19 @@
+<animation AnimationProgress="0.0" AnimationStep="0.125">
+    <binaryTree>
+        <cell>253</cell>
+        <binaryTree BranchEmerge="True" BranchEmergeParameter="0">
+            <cell>-175</cell>
+            <mask>
+                <binaryTree>
+                    <cell>-226</cell>
+                </binaryTree>
+            </mask>
+            <binaryTree>
+                <cell>130</cell>
+                <binaryTree>
+                    <cell>206</cell>
+                </binaryTree>
+            </binaryTree>
+        </binaryTree>
+    </binaryTree>
+</animation>

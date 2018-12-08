@@ -8,6 +8,7 @@ import java.awt.image.BufferedImage;
 
 /**
  * A Canvas is a container of DiagramElements.
+ * The "generateAndPush" methods should be guaranteed to preserve the order of the elements to get the correct overlap.
  * @param <T> The type of elements that lie in this Canvas
  */
 

@@ -2,6 +2,8 @@ package van.de.la.sehen.diagram.pseudodiagram;
 
 import van.de.la.sehen.diagram.prototypediagram.asciiprototypediagram.ASCIIAbstractDiagram;
 import van.de.la.sehen.diagramstyle.DiagramStyle;
+import van.de.la.sehen.diagramtopology.ChildIndex;
+import van.de.la.sehen.diagramtopology.FixedChildIndex;
 import van.de.la.sehen.dimensionparticle.positionparticle.asciipositionparticle.ASCIICoordinateOffset;
 import van.de.la.sehen.warning.WarningStream;
 
@@ -13,6 +15,11 @@ public class ASCIIFixedPseudoDiagram extends ASCIIPseudoDiagram {
         super(parent, style);
         this.x = x;
         this.y = y;
+    }
+
+    @Override
+    public ChildIndex getTopologicalIndex() {
+        return new FixedChildIndex(x, y);
     }
 
     @Override

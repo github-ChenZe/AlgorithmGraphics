@@ -2,6 +2,8 @@ package van.de.la.sehen.diagram.pseudodiagram;
 
 import van.de.la.sehen.diagram.prototypediagram.AbstractDiagram;
 import van.de.la.sehen.diagramstyle.DiagramStyle;
+import van.de.la.sehen.diagramtopology.ChildIndex;
+import van.de.la.sehen.diagramtopology.FixedChildIndex;
 import van.de.la.sehen.dimensionparticle.positionparticle.AbsoluteCoordinate;
 import van.de.la.sehen.dimensionparticle.positionparticle.CoordinateOffset;
 import van.de.la.sehen.warning.WarningStream;
@@ -14,6 +16,11 @@ public class FixedPseudoDiagram extends PseudoDiagram {
         super(parent, style);
         this.x = x;
         this.y = y;
+    }
+
+    @Override
+    public ChildIndex getTopologicalIndex() {
+        return new FixedChildIndex(x, y);
     }
 
     @Override

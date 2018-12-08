@@ -1,0 +1,10 @@
+<table TransitionProgress="0.5">
+    <row>
+        <cell MirrorDiagram="mir">
+            Apple
+        </cell>
+        <cell id="mir">
+            Banana
+        </cell>
+    </row>
+</table>

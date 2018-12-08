@@ -30,6 +30,8 @@ public class AnimationDiagram extends PaneDiagram {
     public DiagramAttributeParticle defaultAttribute(String key) {
         if (key.equals(SWAP_PROGRESS)) return new StyleInheritWrapper(()->this, ANIMATION_PROGRESS).get(0);
         if (key.equals(EMERGE_PROGRESS)) return new StyleInheritWrapper(()->this, ANIMATION_PROGRESS).get(0);
+        if (key.equals(TRANSITION_PROGRESS)) return new StyleInheritWrapper(()->this, ANIMATION_PROGRESS).get(0);
+        if (key.equals(BRANCH_EMERGE_PROGRESS)) return new StyleInheritWrapper(()->this, ANIMATION_PROGRESS).get(0);
         return super.defaultAttribute(key);
     }
 

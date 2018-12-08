@@ -2,6 +2,7 @@ package van.de.la.sehen.diagramimage.asciidiagramimage;
 
 import van.de.la.sehen.diagramimage.element.asciielement.*;
 import van.de.la.sehen.diagramimage.element.pixel.asciipixel.*;
+import van.de.la.sehen.warning.WarningStream;
 
 import java.util.ArrayList;
 import java.util.List;

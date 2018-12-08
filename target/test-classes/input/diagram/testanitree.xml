@@ -48,14 +48,16 @@
                             <cell>
                                 Bottom left
                             </cell>
-                            <cell>
-                                Bottom right fdhjfhds
-                            </cell>
+                            <mask EmergeReverse="False">
+                                <cell>
+                                    Right fhsdjghdjhgjkdgjhkjgdkjhj
+                                </cell>
+                            </mask>
                         </row>
                         <row>
                             <mask EmergeReverse="True">
                                 <cell>
-                                    B Bottom left
+                                    B Bottom lefthk
                                 </cell>
                             </mask>
                             <cell id="id" class="class">

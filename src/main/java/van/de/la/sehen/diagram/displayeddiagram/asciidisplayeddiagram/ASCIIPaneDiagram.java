@@ -62,11 +62,14 @@ public class ASCIIPaneDiagram extends ASCIICompositeDiagram {
             WarningStream.putWarning("Did not set base.", this);
         }
         base.layout();
+        for (ASCIIDiagram child: children) {
+            child.layout();
+        }
     }
 
     @Override
     public void setChildrenPosition() {
-        base.setPosition(new ASCIIPositionOffset(getPadding(), getPadding()));
+        base.setPosition(new ASCIIPositionOffset(getPaddingLeft(), getPaddingRight()));
     }
 
     @Override
@@ -79,7 +82,7 @@ public class ASCIIPaneDiagram extends ASCIICompositeDiagram {
 
     @Override
     public void calculateSize() {
-        setWidth(new ASCIIIntDimensionComponent(base.getWidth().toOffset().add(getPadding()).add(getPadding()).getValue()));
-        setHeight(new ASCIIIntDimensionComponent(base.getHeight().toOffset().add(getPadding()).add(getPadding()).getValue()));
+        setWidth(new ASCIIIntDimensionComponent(base.getWidth().toOffset().add(getPaddingLeft()).add(getPaddingRight()).getValue()));
+        setHeight(new ASCIIIntDimensionComponent(base.getHeight().toOffset().add(getPaddingTop()).add(getPaddingBottom()).getValue()));
     }
 }

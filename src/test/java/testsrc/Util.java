@@ -36,6 +36,7 @@ public class Util {
             } catch (Exception e) {
                 WarningStream.putWarning("Unhandled exception occurred when testing " + xmlSource.getName() + ".",
                         Util.class);
+                throw e;
             }
         }
     }

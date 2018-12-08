@@ -1,0 +1,229 @@
+<animation AnimationProgress="0.0" AnimationStep="0.125">
+    <transition>
+        <binaryTree id="binarytree1251992303" MirrorDiagram="mirrorbinarytree1251992303">
+            <cell id="cell1251992303" MirrorDiagram="mirrorcell1251992303">123</cell>
+            <binaryTree id="binarytree1172003454" MirrorDiagram="mirrorbinarytree1172003454">
+                <cell id="cell1172003454" MirrorDiagram="mirrorcell1172003454">-222</cell>
+                <binaryTree id="binarytree32915200" BranchEmerge="True" BranchEmergeParameter="1"
+                            MirrorDiagram="mirrorbinarytree32915200">
+                    <cell id="cell32915200" MirrorDiagram="mirrorcell32915200">-231</cell>
+                    <binaryTree id="binarytree1387051499" BranchEmerge="True" BranchEmergeParameter="1"
+                                MirrorDiagram="mirrorbinarytree1387051499">
+                        <cell id="cell1387051499" MirrorDiagram="mirrorcell1387051499">-231</cell>
+                        <binaryTree id="binarytree1402186091" BranchEmerge="True" BranchEmergeParameter="0"
+                                    MirrorDiagram="mirrorbinarytree1402186091">
+                            <cell id="cell1402186091" MirrorDiagram="mirrorcell1402186091">-250</cell>
+                        </binaryTree>
+                    </binaryTree>
+                </binaryTree>
+                <binaryTree id="binarytree1865385296" MirrorDiagram="mirrorbinarytree1865385296">
+                    <cell id="cell1865385296" MirrorDiagram="mirrorcell1865385296">-82</cell>
+                    <binaryTree id="binarytree1719529546" MirrorDiagram="mirrorbinarytree1719529546">
+                        <cell id="cell1719529546" MirrorDiagram="mirrorcell1719529546">-134</cell>
+                        <binaryTree id="binarytree1821909695" MirrorDiagram="mirrorbinarytree1821909695">
+                            <cell id="cell1821909695" MirrorDiagram="mirrorcell1821909695">-186</cell>
+                            <binaryTree id="binarytree104494793" BranchEmerge="True" BranchEmergeParameter="0"
+                                        MirrorDiagram="mirrorbinarytree104494793">
+                                <cell id="cell104494793" MirrorDiagram="mirrorcell104494793">-209</cell>
+                            </binaryTree>
+                            <binaryTree id="binarytree201998404" BranchEmerge="True" BranchEmergeParameter="1"
+                                        MirrorDiagram="mirrorbinarytree201998404">
+                                <cell id="cell201998404" MirrorDiagram="mirrorcell201998404">-135</cell>
+                                <binaryTree id="binarytree1679790029" MirrorDiagram="mirrorbinarytree1679790029">
+                                    <cell id="cell1679790029" MirrorDiagram="mirrorcell1679790029">-174</cell>
+                                    <binaryTree id="binarytree1711533850" BranchEmerge="True" BranchEmergeParameter="0"
+                                                MirrorDiagram="mirrorbinarytree1711533850">
+                                        <cell id="cell1711533850" MirrorDiagram="mirrorcell1711533850">-185</cell>
+                                    </binaryTree>
+                                    <binaryTree id="binarytree1942930466" BranchEmerge="True" BranchEmergeParameter="0"
+                                                MirrorDiagram="mirrorbinarytree1942930466">
+                                        <cell id="cell1942930466" MirrorDiagram="mirrorcell1942930466">-169</cell>
+                                    </binaryTree>
+                                </binaryTree>
+                            </binaryTree>
+                        </binaryTree>
+                        <binaryTree id="binarytree349134354" BranchEmerge="True" BranchEmergeParameter="1"
+                                    MirrorDiagram="mirrorbinarytree349134354">
+                            <cell id="cell349134354" MirrorDiagram="mirrorcell349134354">-87</cell>
+                            <binaryTree id="binarytree1551436718" BranchEmerge="True" BranchEmergeParameter="0"
+                                        MirrorDiagram="mirrorbinarytree1551436718">
+                                <cell id="cell1551436718" MirrorDiagram="mirrorcell1551436718">-120</cell>
+                            </binaryTree>
+                        </binaryTree>
+                    </binaryTree>
+                    <binaryTree id="binarytree186121751" MirrorDiagram="mirrorbinarytree186121751">
+                        <cell id="cell186121751" MirrorDiagram="mirrorcell186121751">97</cell>
+                        <binaryTree id="binarytree773864441" BranchEmerge="True" BranchEmergeParameter="1"
+                                    MirrorDiagram="mirrorbinarytree773864441">
+                            <cell id="cell773864441" MirrorDiagram="mirrorcell773864441">79</cell>
+                            <binaryTree id="binarytree1166070402" MirrorDiagram="mirrorbinarytree1166070402">
+                                <cell id="cell1166070402" MirrorDiagram="mirrorcell1166070402">18</cell>
+                                <binaryTree id="binarytree2093631331" BranchEmerge="True" BranchEmergeParameter="0"
+                                            MirrorDiagram="mirrorbinarytree2093631331">
+                                    <cell id="cell2093631331" MirrorDiagram="mirrorcell2093631331">-66</cell>
+                                    <binaryTree id="binarytree24798984" BranchEmerge="True" BranchEmergeParameter="1"
+                                                MirrorDiagram="mirrorbinarytree24798984">
+                                        <cell id="cell24798984" MirrorDiagram="mirrorcell24798984">1</cell>
+                                        <binaryTree id="binarytree994486653" BranchEmerge="True"
+                                                    BranchEmergeParameter="0" MirrorDiagram="mirrorbinarytree994486653">
+                                            <cell id="cell994486653" MirrorDiagram="mirrorcell994486653">-51</cell>
+                                            <binaryTree id="binarytree2094226028" BranchEmerge="True"
+                                                        BranchEmergeParameter="0"
+                                                        MirrorDiagram="mirrorbinarytree2094226028">
+                                                <cell id="cell2094226028" MirrorDiagram="mirrorcell2094226028">-16
+                                                </cell>
+                                            </binaryTree>
+                                        </binaryTree>
+                                    </binaryTree>
+                                </binaryTree>
+                                <binaryTree id="binarytree1590961010" BranchEmerge="True" BranchEmergeParameter="1"
+                                            MirrorDiagram="mirrorbinarytree1590961010">
+                                    <cell id="cell1590961010" MirrorDiagram="mirrorcell1590961010">36</cell>
+                                    <binaryTree id="binarytree1709717185" BranchEmerge="True" BranchEmergeParameter="0"
+                                                MirrorDiagram="mirrorbinarytree1709717185">
+                                        <cell id="cell1709717185" MirrorDiagram="mirrorcell1709717185">35</cell>
+                                    </binaryTree>
+                                </binaryTree>
+                            </binaryTree>
+                        </binaryTree>
+                        <binaryTree id="binarytree535490152" BranchEmerge="True" BranchEmergeParameter="0"
+                                    MirrorDiagram="mirrorbinarytree535490152">
+                            <cell id="cell535490152" MirrorDiagram="mirrorcell535490152">113</cell>
+                        </binaryTree>
+                    </binaryTree>
+                </binaryTree>
+            </binaryTree>
+            <binaryTree id="binarytree1138670186" BranchEmerge="True" BranchEmergeParameter="1"
+                        MirrorDiagram="mirrorbinarytree1138670186">
+                <cell id="cell1138670186" MirrorDiagram="mirrorcell1138670186">218</cell>
+                <binaryTree id="binarytree1798518191" BranchEmerge="True" BranchEmergeParameter="1"
+                            MirrorDiagram="mirrorbinarytree1798518191">
+                    <cell id="cell1798518191" MirrorDiagram="mirrorcell1798518191">207</cell>
+                    <binaryTree id="binarytree271371222" BranchEmerge="True" BranchEmergeParameter="0"
+                                MirrorDiagram="mirrorbinarytree271371222">
+                        <cell id="cell271371222" MirrorDiagram="mirrorcell271371222">165</cell>
+                        <binaryTree id="binarytree1823805735" MirrorDiagram="mirrorbinarytree1823805735">
+                            <cell id="cell1823805735" MirrorDiagram="mirrorcell1823805735">202</cell>
+                            <binaryTree id="binarytree1550627483" BranchEmerge="True" BranchEmergeParameter="0"
+                                        MirrorDiagram="mirrorbinarytree1550627483">
+                                <cell id="cell1550627483" MirrorDiagram="mirrorcell1550627483">174</cell>
+                                <binaryTree id="binarytree44401903" BranchEmerge="True" BranchEmergeParameter="0"
+                                            MirrorDiagram="mirrorbinarytree44401903">
+                                    <cell id="cell44401903" MirrorDiagram="mirrorcell44401903">191</cell>
+                                </binaryTree>
+                            </binaryTree>
+                            <binaryTree id="binarytree1233340314" BranchEmerge="True" BranchEmergeParameter="0"
+                                        MirrorDiagram="mirrorbinarytree1233340314">
+                                <cell id="cell1233340314" MirrorDiagram="mirrorcell1233340314">205</cell>
+                            </binaryTree>
+                        </binaryTree>
+                    </binaryTree>
+                </binaryTree>
+            </binaryTree>
+        </binaryTree>
+        <binaryTree id="mirrorbinarytree1251992303">
+            <cell id="mirrorcell1251992303">123</cell>
+            <binaryTree id="mirrorbinarytree1172003454">
+                <cell id="mirrorcell1172003454">-222</cell>
+                <binaryTree id="mirrorbinarytree32915200" BranchEmerge="True" BranchEmergeParameter="1">
+                    <cell id="mirrorcell32915200">-231</cell>
+                    <binaryTree id="mirrorbinarytree1387051499" BranchEmerge="True" BranchEmergeParameter="1">
+                        <cell id="mirrorcell1387051499">-231</cell>
+                        <binaryTree id="mirrorbinarytree1402186091" BranchEmerge="True" BranchEmergeParameter="0">
+                            <cell id="mirrorcell1402186091">-250</cell>
+                        </binaryTree>
+                    </binaryTree>
+                </binaryTree>
+                <binaryTree id="mirrorbinarytree1719529546">
+                    <cell id="mirrorcell1719529546">-134</cell>
+                    <binaryTree id="mirrorbinarytree1821909695">
+                        <cell id="mirrorcell1821909695">-186</cell>
+                        <binaryTree id="mirrorbinarytree104494793" BranchEmerge="True" BranchEmergeParameter="0">
+                            <cell id="mirrorcell104494793">-209</cell>
+                        </binaryTree>
+                        <binaryTree id="mirrorbinarytree201998404" BranchEmerge="True" BranchEmergeParameter="1">
+                            <cell id="mirrorcell201998404">-135</cell>
+                            <binaryTree id="mirrorbinarytree1679790029">
+                                <cell id="mirrorcell1679790029">-174</cell>
+                                <binaryTree id="mirrorbinarytree1711533850" BranchEmerge="True"
+                                            BranchEmergeParameter="0">
+                                    <cell id="mirrorcell1711533850">-185</cell>
+                                </binaryTree>
+                                <binaryTree id="mirrorbinarytree1942930466" BranchEmerge="True"
+                                            BranchEmergeParameter="0">
+                                    <cell id="mirrorcell1942930466">-169</cell>
+                                </binaryTree>
+                            </binaryTree>
+                        </binaryTree>
+                    </binaryTree>
+                    <binaryTree id="mirrorbinarytree1865385296">
+                        <cell id="mirrorcell1865385296">-82</cell>
+                        <binaryTree id="mirrorbinarytree349134354" BranchEmerge="True" BranchEmergeParameter="1">
+                            <cell id="mirrorcell349134354">-87</cell>
+                            <binaryTree id="mirrorbinarytree1551436718" BranchEmerge="True" BranchEmergeParameter="0">
+                                <cell id="mirrorcell1551436718">-120</cell>
+                            </binaryTree>
+                        </binaryTree>
+                        <binaryTree id="mirrorbinarytree186121751">
+                            <cell id="mirrorcell186121751">97</cell>
+                            <binaryTree id="mirrorbinarytree773864441" BranchEmerge="True" BranchEmergeParameter="1">
+                                <cell id="mirrorcell773864441">79</cell>
+                                <binaryTree id="mirrorbinarytree1166070402">
+                                    <cell id="mirrorcell1166070402">18</cell>
+                                    <binaryTree id="mirrorbinarytree2093631331" BranchEmerge="True"
+                                                BranchEmergeParameter="0">
+                                        <cell id="mirrorcell2093631331">-66</cell>
+                                        <binaryTree id="mirrorbinarytree24798984" BranchEmerge="True"
+                                                    BranchEmergeParameter="1">
+                                            <cell id="mirrorcell24798984">1</cell>
+                                            <binaryTree id="mirrorbinarytree994486653" BranchEmerge="True"
+                                                        BranchEmergeParameter="0">
+                                                <cell id="mirrorcell994486653">-51</cell>
+                                                <binaryTree id="mirrorbinarytree2094226028" BranchEmerge="True"
+                                                            BranchEmergeParameter="0">
+                                                    <cell id="mirrorcell2094226028">-16</cell>
+                                                </binaryTree>
+                                            </binaryTree>
+                                        </binaryTree>
+                                    </binaryTree>
+                                    <binaryTree id="mirrorbinarytree1590961010" BranchEmerge="True"
+                                                BranchEmergeParameter="1">
+                                        <cell id="mirrorcell1590961010">36</cell>
+                                        <binaryTree id="mirrorbinarytree1709717185" BranchEmerge="True"
+                                                    BranchEmergeParameter="0">
+                                            <cell id="mirrorcell1709717185">35</cell>
+                                        </binaryTree>
+                                    </binaryTree>
+                                </binaryTree>
+                            </binaryTree>
+                            <binaryTree id="mirrorbinarytree535490152" BranchEmerge="True" BranchEmergeParameter="0">
+                                <cell id="mirrorcell535490152">113</cell>
+                            </binaryTree>
+                        </binaryTree>
+                    </binaryTree>
+                </binaryTree>
+            </binaryTree>
+            <binaryTree id="mirrorbinarytree1138670186" BranchEmerge="True" BranchEmergeParameter="1">
+                <cell id="mirrorcell1138670186">218</cell>
+                <binaryTree id="mirrorbinarytree1798518191" BranchEmerge="True" BranchEmergeParameter="1">
+                    <cell id="mirrorcell1798518191">207</cell>
+                    <binaryTree id="mirrorbinarytree271371222" BranchEmerge="True" BranchEmergeParameter="0">
+                        <cell id="mirrorcell271371222">165</cell>
+                        <binaryTree id="mirrorbinarytree1823805735">
+                            <cell id="mirrorcell1823805735">202</cell>
+                            <binaryTree id="mirrorbinarytree1550627483" BranchEmerge="True" BranchEmergeParameter="0">
+                                <cell id="mirrorcell1550627483">174</cell>
+                                <binaryTree id="mirrorbinarytree44401903" BranchEmerge="True" BranchEmergeParameter="0">
+                                    <cell id="mirrorcell44401903">191</cell>
+                                </binaryTree>
+                            </binaryTree>
+                            <binaryTree id="mirrorbinarytree1233340314" BranchEmerge="True" BranchEmergeParameter="0">
+                                <cell id="mirrorcell1233340314">205</cell>
+                            </binaryTree>
+                        </binaryTree>
+                    </binaryTree>
+                </binaryTree>
+            </binaryTree>
+        </binaryTree>
+    </transition>
+</animation>

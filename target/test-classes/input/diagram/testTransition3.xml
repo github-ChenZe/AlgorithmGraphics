@@ -1,0 +1,50 @@
+<animation AnimationProgress="0.0">
+    <transition>
+        <pane MirrorDiagram="p">
+            <binaryTree MirrorDiagram="t" BranchEmerge="True" BranchEmergeParameter="0">
+                <cell MirrorDiagram="a">APPLE</cell>
+                <binaryTree MirrorDiagram="tl">
+                    <cell>BANANA</cell>
+                    <binaryTree MirrorDiagram="tll">
+                        <cell>WTML</cell>
+                    </binaryTree>
+                    <binaryTree MirrorDiagram="tlr">
+                        <cell>PMPK</cell>
+                    </binaryTree>
+                </binaryTree>
+                <binaryTree MirrorDiagram="tr">
+                    <cell>PEAR</cell>
+                    <binaryTree MirrorDiagram="trl">
+                        <cell>QCMB</cell>
+                    </binaryTree>
+                    <binaryTree MirrorDiagram="trr">
+                        <cell>ORANGE</cell>
+                    </binaryTree>
+                </binaryTree>
+            </binaryTree>
+        </pane>
+        <pane id="p">
+            <binaryTree id="tl">
+                <cell>BANANA</cell>
+                <binaryTree id="tll">
+                    <cell>WTML</cell>
+                </binaryTree>
+                <binaryTree id="t">
+                    <cell id="a">APPLE</cell>
+                    <binaryTree id="tlr">
+                        <cell>PMPK</cell>
+                    </binaryTree>
+                    <binaryTree id="tr">
+                        <cell>PEAR</cell>
+                        <binaryTree id="trl">
+                            <cell>QCMB</cell>
+                        </binaryTree>
+                        <binaryTree id="trr">
+                            <cell>ORANGE</cell>
+                        </binaryTree>
+                    </binaryTree>
+                </binaryTree>
+            </binaryTree>
+        </pane>
+    </transition>
+</animation>

@@ -1,0 +1,20 @@
+<binaryTree Padding="1">
+    <cell>Apple</cell>
+    <binaryTree Padding="2">
+        <cell>Banana</cell>
+        <binaryTree Padding="3">
+            <cell>God</cell>
+        </binaryTree>
+        <binaryTree Padding="4">
+            <cell>Goddess</cell>
+        </binaryTree>
+    </binaryTree>
+    <binaryTree Padding="5">
+        <cell>
+            NULL
+        </cell>
+        <binaryTree>
+            <cell>Nothing</cell>
+        </binaryTree>
+    </binaryTree>
+</binaryTree>

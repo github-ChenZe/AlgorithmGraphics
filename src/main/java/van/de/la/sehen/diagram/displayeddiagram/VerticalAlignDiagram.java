@@ -38,7 +38,7 @@ public class VerticalAlignDiagram extends MatrixDiagram {
 
     private void push(Diagram diagram) {
         checkMembership(diagram);
-        array.add(diagram);
+        array.add(putChildToIndex(diagram));
     }
 
     private void calculateSizeForSides() {
@@ -48,10 +48,10 @@ public class VerticalAlignDiagram extends MatrixDiagram {
         }
     }
 
-    @Override
+    /* @Override
     public Diagram getChildByIndex(int i) {
         return array.get(i);
-    }
+    } */
 
     @Override
     public void layoutChildren() {
@@ -71,12 +71,12 @@ public class VerticalAlignDiagram extends MatrixDiagram {
         }
     }
 
-    @Override
+    /* @Override
     public void paintDiagram(PortableDiagramCanvas canvas) {
         for (Diagram diagram: array) {
             diagram.paintDiagram(canvas);
         }
-    }
+    } */
 
     @Override
     public void calculateSize() {

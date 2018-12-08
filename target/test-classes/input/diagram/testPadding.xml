@@ -1,0 +1,10 @@
+<table>
+    <row>
+        <pane Width="450" Height="150" PaddingLeft="239" PaddingTop="25">
+            <cell Width="150" Height="100" BackgroundColor="Cyan"></cell>
+            <pane PaddingLeft="50" PaddingTop="175">
+                <cell Height="25" Width="450" BackgroundColor="Yellow"></cell>
+            </pane>
+        </pane>
+    </row>
+</table>

@@ -329,6 +329,10 @@ public class Util {
         return newArray;
     }
 
+    public static double weightedAverageOfDouble(double lhs, double rhs, double weightOfLhs) {
+        return weightOfLhs * lhs + (1 - weightOfLhs) * rhs;
+    }
+
     public static List<Double> weightedAverageOfDoubles(List<Double> lhs, List<Double> rhs, double weightOfLhs) {
         if (lhs.size() != rhs.size()) {
             WarningStream.putWarning("Average of lists of different sizes.", Util.class);

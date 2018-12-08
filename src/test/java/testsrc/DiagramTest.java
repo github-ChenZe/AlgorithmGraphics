@@ -12,6 +12,7 @@ import java.io.PrintStream;
 public class DiagramTest {
     public static void test() {
         Util.output("diagram", "test", (xmlAndCssfile, outpath) -> {
+            // if (!xmlAndCssfile.x.getName().contains("Transition")) return;
             PortableDiagramPixelImage image = new XMLDiagramRenderer().renderFromFile(
                     xmlAndCssfile.x,
                     xmlAndCssfile.y);

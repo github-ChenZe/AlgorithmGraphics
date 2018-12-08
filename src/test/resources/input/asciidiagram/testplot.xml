@@ -1,0 +1,9 @@
+<table>
+    <row>
+        <pane>
+            <plot FunctionVariableName="x" Width="80" Height="20" VarStart="0" VarEnd="20" YStart="-20" YEnd="20" LineThickness="1">
+                x
+            </plot>
+        </pane>
+    </row>
+</table>

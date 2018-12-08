@@ -1,5 +1,6 @@
 package van.de.la.sehen.xmldiagramtree.model;
 
+import org.springframework.lang.Nullable;
 import org.w3c.dom.Element;
 
 import java.util.HashMap;
@@ -17,6 +18,7 @@ public abstract class XMLDiagramTreeModel<NodeT extends XMLDiagramTreeNodeModel<
         idToNode.put(id, node);
     }
 
+    @Nullable
     public NodeT getElementById(String id) {
         return idToNode.get(id);
     }

@@ -2,6 +2,9 @@ package van.de.la.sehen.diagram.pseudodiagram;
 
 import van.de.la.sehen.diagram.prototypediagram.AbstractDiagram;
 import van.de.la.sehen.diagramstyle.DiagramStyle;
+import van.de.la.sehen.diagramtopology.ChildIndex;
+import van.de.la.sehen.diagramtopology.FixedChildIndex;
+import van.de.la.sehen.diagramtopology.FreeChildIndex;
 import van.de.la.sehen.dimensionparticle.positionparticle.CoordinateOffset;
 
 public class FreePseudoDiagram extends PseudoDiagram {
@@ -12,6 +15,11 @@ public class FreePseudoDiagram extends PseudoDiagram {
         super(parent, style);
         this.xRatio = xRatio;
         this.yRatio = yRatio;
+    }
+
+    @Override
+    public ChildIndex getTopologicalIndex() {
+        return new FreeChildIndex(xRatio, yRatio);
     }
 
     @Override

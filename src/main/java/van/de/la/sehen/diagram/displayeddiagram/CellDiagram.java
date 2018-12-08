@@ -51,6 +51,13 @@ public class CellDiagram extends Diagram {
 
     @Override
     public void paintDiagram(PortableDiagramCanvas canvas) {
+        if (getBackgroundColor().getAlpha() > 0)
+            canvas.generateAndPushPolygon(getBackgroundColor()).
+                    putXY(getAbsoluteX(), getAbsoluteY()).
+                    putXY(getAbsoluteX().addByOffset(getWidth().toOffset()), getAbsoluteY()).
+                    putXY(getAbsoluteX().addByOffset(getWidth().toOffset()),
+                            getAbsoluteY().addByOffset(getHeight().toOffset())).
+                    putXY(getAbsoluteX(), getAbsoluteY().addByOffset(getHeight().toOffset()));
         canvas.generateAndPushString(getText(), getAbsoluteX().addByOffset(getPadding()), getAbsoluteY().addByOffset(getPadding()), getFontName(), getFontSize(), getFontColor());
     }
 

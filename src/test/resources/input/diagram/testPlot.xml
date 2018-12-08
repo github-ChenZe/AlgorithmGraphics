@@ -1,0 +1,5 @@
+<pane>
+    <plot FunctionVariableName="x" Width="1080" Height="960" VarStart="0" VarEnd="20" YStart="-1.5" YEnd="1.5" LineThickness="1">
+        sin(x-t)
+    </plot>
+</pane>

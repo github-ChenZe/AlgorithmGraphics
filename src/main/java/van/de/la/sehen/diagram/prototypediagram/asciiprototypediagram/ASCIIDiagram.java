@@ -1,5 +1,7 @@
 package van.de.la.sehen.diagram.prototypediagram.asciiprototypediagram;
 
+import org.springframework.lang.NonNull;
+import org.springframework.lang.Nullable;
 import van.de.la.sehen.diagram.displayeddiagram.asciidisplayeddiagram.ASCIIEmptyDiagram;
 import van.de.la.sehen.diagram.displayeddiagram.asciidisplayeddiagram.ASCIIRootDiagram;
 import van.de.la.sehen.diagram.prototypediagram.model.DiagramModel;
@@ -181,6 +183,7 @@ public abstract class ASCIIDiagram extends ASCIIAbstractDiagram implements Diagr
         return StyleModel.isAttributeKey(key);
     }
 
+    @Nullable
     public DiagramAttributeParticle defaultAttribute(String key) {
         switch (key) {
             case "LineThickness":
@@ -223,13 +226,22 @@ public abstract class ASCIIDiagram extends ASCIIAbstractDiagram implements Diagr
                 return BooleanStyle.TRUE;
             case "Draw":
                 return BooleanStyle.TRUE;
+            case WIDTH:
+            case HEIGHT:
+            case PADDING_LEFT:
+            case PADDING_RIGHT:
+            case PADDING_TOP:
+            case PADDING_BOTTOM:
+                return null;
         }
         WarningStream.putWarning("Invalid or no default attribute key name " + key + ".", ASCIIDiagram.class);
         return null;
     }
 
+    @Nullable
     public <T> T getStyleOf(String key) {
         DiagramAttributeCluster cluster = getStyle(key);
+        if (cluster == null) return null;
         if (!(cluster instanceof DiagramAttributeSingleCluster)) {
             WarningStream.putWarning("Getting single particle from non-single cluster", this);
         }
@@ -325,6 +337,63 @@ public abstract class ASCIIDiagram extends ASCIIAbstractDiagram implements Diagr
 
     protected Boolean getDraw() {
         return ((BooleanStyle) (getStyle("Draw").get(0))).toBoolean();
+    }
+
+    public double getNotNullDouble(String key) {
+        Double nullable = getStyleOf(key);
+        if (nullable == null) {
+            WarningStream.putWarning("Attribute not set: " + key + ".", this);
+            return Double.NaN;
+        }
+        return nullable;
+    }
+
+    public double getVarStart() {
+        return getNotNullDouble(VAR_START);
+    }
+
+    public double getVarEnd() {
+        return getNotNullDouble(VAR_END);
+    }
+
+    public double getYStart() {
+        return getNotNullDouble(Y_START);
+    }
+
+    public double getYEnd() {
+        return getNotNullDouble(Y_END);
+    }
+
+    public String getFunctionVariableName() {
+        return getStyleOf(FUNCTION_VARIABLE_NAME);
+    }
+
+    @NonNull
+    protected ASCIICoordinateOffset getPaddingComponent(@NonNull String key) {
+        //TODO: fix the null-check here with a well-defined unset mark
+        Integer paddingComponent = getStyleOf(key);
+        if (paddingComponent != null) return new ASCIICoordinateOffset(paddingComponent);
+        return new ASCIICoordinateOffset(getStyleOf(PADDING));
+    }
+
+    protected ASCIICoordinateOffset getPaddingLeft() { return getPaddingComponent(PADDING_LEFT); }
+
+    protected ASCIICoordinateOffset getPaddingRight() { return getPaddingComponent(PADDING_RIGHT); }
+
+    protected ASCIICoordinateOffset getPaddingTop() { return getPaddingComponent(PADDING_TOP); }
+
+    protected ASCIICoordinateOffset getPaddingBottom() { return getPaddingComponent(PADDING_BOTTOM); }
+
+    @Override
+    public ASCIIIntDimensionComponent getWidth() {
+        Integer width = getStyleOf(WIDTH);
+        return width == null ? super.getWidth() : new ASCIIIntDimensionComponent(width);
+    }
+
+    @Override
+    public ASCIIIntDimensionComponent getHeight() {
+        Integer height = getStyleOf(HEIGHT);
+        return height == null ? super.getHeight() : new ASCIIIntDimensionComponent(height);
     }
 
     @Override
